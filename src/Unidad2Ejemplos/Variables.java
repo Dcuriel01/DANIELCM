@@ -23,6 +23,9 @@ public class Variables {
 		// Se puede asignar tanto en la barra de la declaración como en otra linea 
 		System.out.println("Tu DNI es "+ dni);
 		
+		
+		
+		
 	}
 
 }

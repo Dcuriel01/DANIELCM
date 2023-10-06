@@ -18,10 +18,10 @@ f)    Una cadena constante MENSAJE con valor "Error en la entrada de datos".
 */
 	byte EOF = -1;
 	byte MAXIMO = 99;
-	boolean 
-	
+	byte CIERTO = 1; 
+	byte FALSO = 0;
 	char ULTIMA_LETRA =	'Z';
-	
+	double PI =3.1415926535897932384626433832795028841971693993751058209 ;
 	String MENSAJE = "Error en la entrada de datos";
 	
 	}

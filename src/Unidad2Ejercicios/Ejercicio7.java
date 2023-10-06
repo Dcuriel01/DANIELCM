@@ -12,7 +12,7 @@ public class Ejercicio7 {
 		float precioArticulo;// he elegido float porque lo más seguro es que tenga decimales pero no tenga el suficiente valor como para pasar el límite de float
 		short añoEvento;// he elegido short porque años porque no superara su límite
 		byte numeroPatas;// he elegido byte porque ningun animal tiene mas de 127 patas 
-		double precioCoche;// he elegido double porque el precio tendra decimales y será un calor muy alto dependiendo del coche  
+		double precioCoche;// he elegido double porque el precio tendra decimales y será un valor muy alto dependiendo del coche  
 
 	}
 

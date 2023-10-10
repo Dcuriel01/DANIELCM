@@ -8,14 +8,14 @@ public class Ejercicio13 {
 		double r;
 		double circunferencia;
 		double area;
-		double pi = 3.14 ;
+		final double PI = 3.1416 ;
 		
 		System.out.print("Dame el radio de tu círculo:");
 		Scanner entrada = new Scanner(System.in);
-		r = entrada.nextFloat();
+		r = entrada.nextDouble();
 		
-		area = pi * (r*r);
-		circunferencia = pi * (r*2);
+		area = PI * (r*r);
+		circunferencia = PI * (r*2);
 		
 		System.out.println("El área de tu círculo es:" + area + " y la circunferencia:" + circunferencia);
 		

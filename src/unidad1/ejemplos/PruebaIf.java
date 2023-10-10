@@ -15,6 +15,8 @@ public class PruebaIf {
 	}
 	System.out.println("Eres mayor de edad");
 	
+	entrada.close();
+	
 	
 	}
 }

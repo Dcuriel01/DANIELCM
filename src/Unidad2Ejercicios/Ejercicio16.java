@@ -1,4 +1,4 @@
-package Unidad2Ejercicios;
+package Unidad2Ejercicios ;
 
 public class Ejercicio16 {
 

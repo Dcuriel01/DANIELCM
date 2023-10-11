@@ -11,8 +11,6 @@ public class Ejercicio16 {
 		System.out.println("C vale = " + C);
 		System.out.println("D vale = " + D);
 		
-		System.out.println(" ");
-		
 		System.out.println("Nuevos Valores: ");
 		B = C; 
 		System.out.println("B toma el valor de C. B = " + B);

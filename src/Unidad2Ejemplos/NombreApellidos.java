@@ -24,7 +24,7 @@ public class NombreApellidos {
 		System.out.print("Dime tu nombre por favor:");
 		nombre = entrada.next(); // No puede contener espacio
 		
-		System.out.println("Tu nombre completo es: " + nombre + " " + apellidos + " y tu télefono: "+ numeroTlf);
+		System.out.println("Tu nombre completo es: " + nombre + " " + apellidos + " y tu télefono:"+ numeroTlf);
 		
 		entrada.close();
 

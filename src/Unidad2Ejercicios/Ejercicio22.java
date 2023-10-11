@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio22 {
 	
 	public static void main(String[] args) {
-		
+		/*
 		long poblacionMundial;
 		float crecAnual;
 		float calculo;
@@ -36,6 +36,12 @@ public class Ejercicio22 {
 		System.out.println("En 3 años crecera " + en3Año);
 		System.out.println("En 4 años crecera " + en4Año);
 		System.out.println("En 5 años crecera " + en5Año);
+		
+		ESTA EN PROCESO NO ME DIO TIEMPO A REVISARLO
+		
+		*/
+		
+		
 		
 		
 	}

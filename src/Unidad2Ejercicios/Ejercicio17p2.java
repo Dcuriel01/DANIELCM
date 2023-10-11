@@ -15,7 +15,7 @@ public class Ejercicio17p2 {
 		gradoF=(gradoC*9/5)+32;
 		System.out.println("Los grados que has introducido en ºF son:" + gradoF);
 		
-		entrada.close();
+		entrada.close() ;
 		
 		
 	}

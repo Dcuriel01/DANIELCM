@@ -25,7 +25,7 @@ public class Ejercicio12 {
 		System.out.println("Su multiplicación es:" + multiplicacion);
 		System.out.println("Su cociente es:" + division);
 		
-		entrada.close();
+		entrada.close() ;
 		
 	}
 

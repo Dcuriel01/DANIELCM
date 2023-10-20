@@ -9,7 +9,7 @@ public class Ejercicio6 {
 		int moduloA;
 		Scanner entrada = new Scanner(System.in);
 
-		System.out.print("Introduzca un número entre el 1 y el : ");
+		System.out.print("Introduzca un número entre el 1 y el 99 : ");
 		numeroA = entrada.nextInt();
 		
 		moduloA=numeroA%2;
@@ -19,6 +19,6 @@ public class Ejercicio6 {
 		} else {
 			System.out.println("El número tiene solo una cifra");
 		}
-
+	entrada.close();
 	}
 }

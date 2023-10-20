@@ -20,19 +20,13 @@ public class Menu {
 			if (opcion == 1) {
 				System.out.println("Introduzca el año");
 				anyo = entrada.nextInt();
-			bisiesto = (((anyo%4==0) && (anyo%100!=0))||(anyo%400==0));
-			
-			if (bisiesto) {
-				System.out.println("El año " + anyo + " es bisiesto");
+			bisiesto = (((anyo%4==0) && (anyo%100!=0))||(anyo%400==0));    		//if ((anyo % 4 == 0 & anyo % 100 != 0) | anyo % 400 == 0) {
+																				//System.out.println("Tu año es bisiesto");
+			if (bisiesto) {														//} else {
+				System.out.println("El año " + anyo + " es bisiesto");			//System.out.println("Tu año no es bisiesto");}
 			} else {
 				System.out.println("El año " + anyo + " no es bisiesto");
-			}
-																					/*if ((anyo % 4 == 0 & anyo % 100 != 0) | anyo % 400 == 0) {
-																										System.out.println("Tu año es bisiesto");
-																									} else {
-																										System.out.println("Tu año no es bisiesto");
-																									} */
-
+			}																						 																									
 			} else if (opcion == 2) {
 				System.out.println("Gracias. hasta la próxima");
 			} else {

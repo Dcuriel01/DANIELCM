@@ -8,6 +8,7 @@ public class Ejercicio8 {
 		int numeroA;
 		int cifra1;
 		int cifra2;
+		int cifra3;
 		int cifra4;
 		int cifra5;
 		Scanner entrada = new Scanner(System.in);
@@ -17,17 +18,27 @@ public class Ejercicio8 {
 
 		cifra1 = numeroA % 10;
 		cifra2 = (numeroA / 10) % 10;
+		cifra3 = (numeroA / 100) % 10;
 		cifra4 = (numeroA / 1000) % 10;
 		cifra5 = (numeroA / 10000) % 10;
 
-		if (cifra1==cifra5&cifra2==cifra4) {
-			System.out.println("Tu número es capicúa");
+		if (cifra4 == 0 & cifra5 == 0) {
+			if (cifra1 == cifra3) {
+				System.out.println("Tu número es capicúa");
+			} else {
+				System.out.println("Tu número no es capicúa");
+			}
+
 		} else {
-			System.out.println("Tu número no es capicúa");
+			if (cifra1 == cifra5 & cifra2 == cifra4) {
+				System.out.println("Tu número es capicúa");
+			} else {
+				System.out.println("Tu número no es capicúa");
+			}
 		}
-		
+
 		entrada.close();
-		
+
 	}
 
 }

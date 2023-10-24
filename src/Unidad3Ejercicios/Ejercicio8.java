@@ -22,13 +22,24 @@ public class Ejercicio8 {
 		cifra4 = (numeroA / 1000) % 10;
 		cifra5 = (numeroA / 10000) % 10;
 
-		if (cifra4 == 0 & cifra5 == 0) {
+		if (cifra3 == 0 & cifra4 == 0 & cifra5 == 0) {
+			if (cifra1 == cifra2) {
+				System.out.println("Tu número es capicúa");
+			} else {
+				System.out.println("Tu número no es capicúa");
+			}
+		} else if (cifra4 == 0 & cifra5 == 0) {
 			if (cifra1 == cifra3) {
 				System.out.println("Tu número es capicúa");
 			} else {
 				System.out.println("Tu número no es capicúa");
 			}
-
+		} else if (cifra5 == 0) {
+			if (cifra1 == cifra4 & cifra2 == cifra3) {
+				System.out.println("Tu número es capicúa");
+			} else {
+				System.out.println("Tu número no es capicúa");
+			}
 		} else {
 			if (cifra1 == cifra5 & cifra2 == cifra4) {
 				System.out.println("Tu número es capicúa");

@@ -16,7 +16,7 @@ public class Ejercicio18p1 {
 		valoreuros=entrada.nextDouble();
 		valorlibras = valoreuros*0.86375;
 	
-		System.out.println("Los euros que has introducido son " + valorlibras + " libras");
+		System.out.printf("Los euros que has introducido son %.2f",valorlibras," libras");
 		
 		entrada.close();
 		

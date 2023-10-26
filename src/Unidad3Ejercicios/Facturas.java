@@ -22,13 +22,13 @@ public class Facturas {
 		precioIva = precioCompra + (precioCompra * 0.21f);
 		if (precioIva <= 30) {
 			precioDescuento = precioIva * 0.1f;
-			System.out.println("El precio a pagar con su descuento del 10% es: " + (precioIva - precioDescuento));
+			System.out.println("El precio a pagar con el aumento de iVA y su descuento del 10% es: " + (precioIva - precioDescuento));
 		} else if (precioIva <= 70) {
 			precioDescuento = precioIva * 0.25f;
-			System.out.println("El precio a pagar con su descuento del 25% es: " + (precioIva - precioDescuento));
+			System.out.println("El precio a pagar con el aumento de iVA y su descuento del 25% es: " + (precioIva - precioDescuento));
 		} else if (precioIva > 70) {
 			precioDescuento = precioIva * 0.35f;
-			System.out.println("El precio a pagar con su descuento del 35% es: " + (precioIva - precioDescuento));
+			System.out.println("El precio a pagar con el aumento de iVA y su descuento del 35% es: " + (precioIva - precioDescuento));
 		} else {
 			System.out.println("Debe pagar: " + precioIva);
 		}

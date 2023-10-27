@@ -3,7 +3,6 @@ package Unidad3Ejercicios;
 public class Ejercicio19 {
 
 	public static void main(String[] args) {
-		/*
 		int suma;
 		
 		System.out.println("hola");
@@ -12,8 +11,8 @@ public class Ejercicio19 {
 			suma = i+(i+1);
 			System.out.println(suma);
 		}
-s
-		 */
+
+		 
 	}
 
 }

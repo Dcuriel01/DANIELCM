@@ -1,4 +1,4 @@
-package Unidad4Ejemplos;
+package Unidad4Ejercicios;
 
 import java.util.Scanner;
 

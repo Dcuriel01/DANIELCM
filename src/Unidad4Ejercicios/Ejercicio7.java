@@ -10,7 +10,13 @@ public class Ejercicio7 {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Indique un número");
 		a = entrada.nextInt();
-		comprendido(a);
+		aceptado = comprendido(a);
+		if (aceptado) {
+			System.out.println("Si esta comprendido");
+		} else {
+			System.out.println("No esta comprendido");
+		}
+		entrada.close();
 	}
 
 	public static boolean comprendido(int a) {

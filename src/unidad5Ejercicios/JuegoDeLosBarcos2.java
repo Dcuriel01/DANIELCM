@@ -30,25 +30,25 @@ public class JuegoDeLosBarcos2 {
 		int barcoDe2 = 0;
 		int barcoDe3 = 0;
 
-		filaCordBarcoDe1 = pedirCordBarcoFila();
-		colCordBarcoDe1 = pedirCordBarcocol();
-		filaCord1BarcoDe2 = pedirCordBarcoFila();
-		colCord1BarcoDe2 = pedirCordBarcocol();
-		filaCord2BarcoDe2 = pedirCordBarcoFila();
-		colCord2BarcoDe2 = pedirCordBarcocol();
-		filaCord1BarcoDe3 = pedirCordBarcoFila();
-		colCord1BarcoDe3 = pedirCordBarcocol();
-		filaCord2BarcoDe3 = pedirCordBarcoFila();
-		colCord2BarcoDe3 = pedirCordBarcocol();
-		filaCord3BarcoDe3 = pedirCordBarcoFila();
-		colCord3BarcoDe3 = pedirCordBarcocol();
+		filaCordBarcoDe1 = pedirCordBarcoFila("1","del barco de 1");
+		colCordBarcoDe1 = pedirCordBarcocol("1","del barco de 1");
+		filaCord1BarcoDe2 = pedirCordBarcoFila("1","del barco de 2");
+		colCord1BarcoDe2 = pedirCordBarcocol("1","del barco de 2");
+		filaCord2BarcoDe2 = pedirCordBarcoFila("2","del barco de 2");
+		colCord2BarcoDe2 = pedirCordBarcocol("2","del barco de 2");
+		filaCord1BarcoDe3 = pedirCordBarcoFila("1","del barco de 3");
+		colCord1BarcoDe3 = pedirCordBarcocol("1","del barco de 3");
+		filaCord2BarcoDe3 = pedirCordBarcoFila("2","del barco de 3");
+		colCord2BarcoDe3 = pedirCordBarcocol("2","del barco de 3");
+		filaCord3BarcoDe3 = pedirCordBarcoFila("3","del barco de 3");
+		colCord3BarcoDe3 = pedirCordBarcocol("3","del barco de 3");
 
 		tablero[filaCord1BarcoDe2][colCord1BarcoDe2] = 1;
 		tablero[filaCord2BarcoDe2][colCord2BarcoDe2] = 1;
 
-		tablero[1][5] = 1;
-		tablero[1][6] = 1;
-		tablero[1][7] = 1;
+		tablero[filaCord1BarcoDe3][filaCord1BarcoDe3] = 1;
+		tablero[filaCord2BarcoDe3][filaCord2BarcoDe3] = 1;
+		tablero[filaCord3BarcoDe3][filaCord3BarcoDe3] = 1;
 
 		tablero[filaCordBarcoDe1][colCordBarcoDe1] = 1;
 		do {
@@ -85,16 +85,16 @@ public class JuegoDeLosBarcos2 {
 
 	}
 
-	private static int pedirCordBarcoFila() {
+	private static int pedirCordBarcoFila(String numero,String mensaje) {
 		int filaCordBarco;
-		System.out.println("Indique la fila de la cordenada");
+		System.out.println("Indique la fila de la cordenada "+ numero + " " + mensaje);
 		filaCordBarco = entrada.nextInt();
 		return filaCordBarco;
 	}
 
-	private static int pedirCordBarcocol() {
+	private static int pedirCordBarcocol(String numero,String mensaje) {
 		int colCordBarco;
-		System.out.println("Indique la fila de la cordenada");
+		System.out.println("Indique la fila de la cordenada "+ numero + " " + mensaje);
 		colCordBarco = entrada.nextInt();
 		return colCordBarco;
 	}

@@ -7,7 +7,7 @@ public class BusquedaBinaria {
 		int arr[] = { 3, 11, 22, 34, 49, 51, 64, 78, 86, 90 };
 		int elementoBuscado = 22;
 		int resultado = -1;
-
+		
 		System.out.print("Array: ");
 		imprimirArray(arr);
 		System.out.println();

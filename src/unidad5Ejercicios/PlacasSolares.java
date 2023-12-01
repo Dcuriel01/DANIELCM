@@ -58,21 +58,48 @@ public class PlacasSolares {
 
 	private static void registrarPlaca() {
 		int numPlaca;
+		boolean salir = true;
 		System.out.println("¿Qué placa desea almacenar? (1-10)");
 		numPlaca = entrada.nextInt();
 		numPlaca = numPlaca - 1;
+		do {
+		salir = true;
 		System.out.println("¿Cuál es su identificador?");
 		Placas[numPlaca][0] = entrada.nextInt();
+		if (Placas[numPlaca][0]<0) {
+			salir = false;
+		}
 		System.out.println("¿Cuál es su cantidad de energía diaria?");
 		Placas[numPlaca][1] = entrada.nextInt();
+		if (Placas[numPlaca][1]<0) {
+			salir = false;
+		}
 		System.out.println("¿Cuál es su latitud?");
 		Placas[numPlaca][2] = entrada.nextInt();
+		if (Placas[numPlaca][2]<0) {
+			salir = false;
+		}
 		System.out.println("¿Cuál es su longitud?");
 		Placas[numPlaca][3] = entrada.nextInt();
+		if (Placas[numPlaca][3]<0) {
+			salir = false;
+		}
 		System.out.println("¿Esta activa (1) o inactiva (0)?");
 		Placas[numPlaca][4] = entrada.nextInt();
+		if (Placas[numPlaca][4]!=0 & Placas[numPlaca][4]!=1) {
+			salir = false;
+		}
 		System.out.println("¿Cuál es su orientación? (1 este) (2 oeste) (3 sur)");
 		Placas[numPlaca][5] = entrada.nextInt();
+		if (Placas[numPlaca][5]!=1 & Placas[numPlaca][5]!=2  & Placas[numPlaca][5]!=3) {
+			salir = false;
+		}
+		if (!salir) {
+			System.out.println("Alguno de los valores introducidos es incorrecto repita introduciendo lo que se pide");
+		}else {
+			System.out.println("Placa registrada");
+		}
+		} while (!salir);
 
 	}
 

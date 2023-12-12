@@ -15,9 +15,12 @@ public class Ejercicio29 {
 				longMatriz++;
 				matriz[x]=sueldo;
 				x++;
-			}else {
+				
+			}
+			else {
 				System.out.println("Saliendo");
 			}
+			
 		}
 		for (double d : matriz) {
 			System.out.print(d + " ");

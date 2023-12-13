@@ -42,7 +42,7 @@ public class ServicioBicisElectricas {
 
 	private static void reservarBici() {
 		int horas;
-		char consultaBono;
+		char consultaBono; // Esta variable comprueba que el caracter añadido sea correcto y la siguiente si tiene bono o no
 		boolean bono;
 		boolean salir = false;
 		do {

@@ -1,33 +1,34 @@
 package unidad7Ejemplos;
 
 public class Coche {
-	
-	private String marca="Desconocido";
-	private String modelo="Desconocido";
-	private String matricula="Desconocida";
-	private double km=0000;
-	private double longitud=00;
-	private double altura=00;
-	private int nPuertas=0;
-	private int nAsientos=0;
-	private int id=00;
-	private String tipo="Desconocido";
-	private double peso=0;
+
+	private String marca = "Desconocido";
+	private String modelo = "Desconocido";
+	private String matricula = "Desconocida";
+	private double km = 0000;
+	private double longitud = 00;
+	private double altura = 00;
+	private int nPuertas = 0;
+	private int nAsientos = 0;
+	private int id = 00;
+	private String tipo = "Desconocido";
+	private double peso = 0;
 	private int cv;
-	
-	public Coche (String marca, String modelo, String matricula, double km, double longitud, double altura, int nPuertas, int nAsientos, int id, String tipo, double peso, int cv) {
-		this.marca=marca;
-		this.modelo=modelo;
-		this.matricula=matricula;
-		this.km=km;
-		this.longitud=longitud;
-		this.altura=altura;
-		this.nPuertas=nPuertas;
-		this.nAsientos=nAsientos;
-		this.id=id;
-		this.tipo=tipo;
-		this.peso=peso;
-		this.cv=cv;
+
+	public Coche(String marca, String modelo, String matricula, double km, double longitud, double altura, int nPuertas,
+			int nAsientos, int id, String tipo, double peso, int cv) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.matricula = matricula;
+		this.km = km;
+		this.longitud = longitud;
+		this.altura = altura;
+		this.nPuertas = nPuertas;
+		this.nAsientos = nAsientos;
+		this.id = id;
+		this.tipo = tipo;
+		this.peso = peso;
+		this.cv = cv;
 	}
 
 	public String getMarca() {
@@ -117,7 +118,7 @@ public class Coche {
 	public void setPeso(double peso) {
 		this.peso = peso;
 	}
-	 
+
 	public int getCv() {
 		return cv;
 	}
@@ -126,21 +127,24 @@ public class Coche {
 		this.cv = cv;
 	}
 
-	public void imprimirDatosCoche(){
-		System.out.println("DATOS COCHE");
-		System.out.println("Marca: "+marca);
-		System.out.println("Modelo: "+modelo);
-		System.out.println("Matricula: "+matricula);
-		System.out.println("Kilometros: "+km);
-		System.out.println("Longitud: "+longitud);
-		System.out.println("Altura: "+altura);
-		System.out.println("Número de puertas: "+nPuertas);
-		System.out.println("Número de asientos: "+nAsientos);
-		System.out.println("ID: "+id);
-		System.out.println("Tipo: "+tipo);
-		System.out.println("Peso: "+peso);
-		System.out.println("Cv: " + cv);
-		
+	public String toString() {
+
+		String informacion = "";
+		informacion += "DATOS COCHE \n";
+		informacion += "Marca: " + marca + "\n";
+		informacion += "Modelo: " + modelo + "\n";
+		informacion += "Matricula: " + matricula + "\n";
+		informacion += "Kilometros: " + km + "\n";
+		informacion += "Longitud: " + longitud + "\n";
+		informacion += "Altura: " + altura + "\n";
+		informacion += "Número de puertas: " + nPuertas + "\n";
+		informacion += "Número de asientos: " + nAsientos + "\n";
+		informacion += "ID: " + id + "\n";
+		informacion += "Tipo: " + tipo + "\n";
+		informacion += "Peso: " + peso + "\n";
+		informacion += "Cv: " + cv + "\n";
+		return informacion;
+
 	}
-	 
+
 }

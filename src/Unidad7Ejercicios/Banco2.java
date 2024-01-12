@@ -33,9 +33,10 @@ public class Banco2 {
 	}
 
 	private static String generarFecha() {
+		int x = random.nextInt(11);
 		DateTimeFormatter formatoFecha1 = DateTimeFormatter.ofPattern("MM/yy");
 		LocalDate fechaLocal = LocalDate.now();
-		LocalDate fechaCaducidad = fechaLocal.plusYears(4);
+		LocalDate fechaCaducidad = fechaLocal.plusYears(x);
 		String fechaCaducidadCadena = fechaCaducidad.format(formatoFecha1);
 		return fechaCaducidadCadena;
 	}

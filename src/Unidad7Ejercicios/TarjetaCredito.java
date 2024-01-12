@@ -2,11 +2,11 @@ package Unidad7Ejercicios;
 
 public class TarjetaCredito {
 
-	String numero;
-	String marca;
-	String entidad;
-	String fecha;
-	String cvv;
+	private String numero;
+	private String marca;
+	private String entidad;
+	private String fecha;
+	private String cvv;
 	
 	public TarjetaCredito(String numero, String marca, String entidad, String fecha, String cvv) {
 		this.numero = numero;
@@ -42,7 +42,7 @@ public class TarjetaCredito {
 	}
 	
 	public String imprimirDatos() {
-	String texto = "El número de su tarjeta es " + numero + ", su marca es " + marca + ", su entidad bancaria " + entidad +
+		String texto = "El número de su tarjeta es " + numero + ", su marca es " + marca + ", su entidad bancaria " + entidad +
 			", su caducidad es el "+ fecha + " y su cvv es el " + cvv;
 	return texto;
 	}

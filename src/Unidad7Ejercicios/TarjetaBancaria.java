@@ -2,11 +2,11 @@ package Unidad7Ejercicios;
 
 public class TarjetaBancaria {
 
-	String numero;
-	String marca;
-	String entidad;
-	String fecha;
-	int cvv;
+	private String numero;
+	private String marca;
+	private String entidad;
+	private String fecha;
+	private int cvv;
 	
 	public TarjetaBancaria(String numero, String marca, String entidad, String fecha, int cvv) {
 		this.numero = numero;

@@ -55,8 +55,8 @@ public class Banco {
 		int cvv;
 		boolean salir = false;
 		do {
-			cvv = random.nextInt(400);
-			if (cvv < 300 | cvv > 399) {
+			cvv = random.nextInt(999);
+			if (cvv < 100 | cvv > 999) {
 
 			} else {
 				salir = true;

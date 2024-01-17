@@ -57,7 +57,7 @@ public class Validador {
 	}
 	public static boolean validarDias(String diasPropios){
 		boolean coincide = false;
-		Pattern patternDias = Pattern.compile("(\\d{2}-\\d{2}-\\d{4}){1-4}");
+		Pattern patternDias = Pattern.compile("(\\d{2}-\\d{2}-\\d{4}\\s){1-4}");
 		Matcher matcherDias = patternDias.matcher(diasPropios);
 		coincide = matcherDias.matches();
 		return coincide;

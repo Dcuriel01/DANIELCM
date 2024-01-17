@@ -1,12 +1,14 @@
 package Unidad7Ejercicios;
 
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BuscarCoincidencias {
 
+	
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);
 		// Ejemplo con metacaracteres
 		Pattern pattern = Pattern.compile("a.*b");
 		Matcher matcher = pattern.matcher("aXYZb");

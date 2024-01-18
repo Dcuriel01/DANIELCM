@@ -14,7 +14,7 @@ public class Validador {
 	}
 	public static boolean validarFecha(String fecha){
 		boolean coincide = false;
-		Pattern patternFecha = Pattern.compile("\\d{1-2}-\\d{1-2}-\\d{4}");
+		Pattern patternFecha = Pattern.compile("[1-9]\\d{2}-[1-9]\\d{2}-[1-9]\\d{4}");
 		Matcher matcherFecha = patternFecha.matcher(fecha);
 		coincide = matcherFecha.matches();
 		return coincide;
@@ -57,7 +57,7 @@ public class Validador {
 	}
 	public static boolean validarDias(String diasPropios){
 		boolean coincide = false;
-		Pattern patternDias = Pattern.compile("(\\d{2}-\\d{2}-\\d{4}\\s){1-4}");
+		Pattern patternDias = Pattern.compile("(\\d{2}-\\d{2}-\\d{4}\\s){1,4}");
 		Matcher matcherDias = patternDias.matcher(diasPropios);
 		coincide = matcherDias.matches();
 		return coincide;

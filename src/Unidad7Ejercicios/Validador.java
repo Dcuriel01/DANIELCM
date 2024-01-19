@@ -14,7 +14,7 @@ public class Validador {
 	}
 	public static boolean validarFecha(String fecha){
 		boolean coincide = false;
-		Pattern patternFecha = Pattern.compile("[1-9]\\d{2}-[1-9]\\d{2}-[1-9]\\d{4}");
+		Pattern patternFecha = Pattern.compile("\\d{2}-\\d{2}-\\d{4}");
 		Matcher matcherFecha = patternFecha.matcher(fecha);
 		coincide = matcherFecha.matches();
 		return coincide;
@@ -28,7 +28,7 @@ public class Validador {
 	}
 	public static boolean validarNombre(String nombre){
 		boolean coincide = false;
-		Pattern patternNombre = Pattern.compile("[A-Z]{1}[a-z]{10}\\s[A-Z]{1}[a-z]{10}\\s[A-Z]{1}[a-z]{10}");
+		Pattern patternNombre = Pattern.compile("[A-Z]{1}[a-z]{1,10}\\s[A-Z]{1}[a-z]{1,10}\\s[A-Z]{1}[a-z]{1,10}");
 		Matcher matcherNombre = patternNombre.matcher(nombre);
 		coincide = matcherNombre.matches();
 		return coincide;
@@ -43,14 +43,14 @@ public class Validador {
 	
 	public static boolean validarTelefono(String telefono){
 		boolean coincide = false;
-		Pattern patternTelefono = Pattern.compile("[1-9]{3}\\s[1-9]{2}\\s[1-9]{2}\\s[1-9]{2}");
+		Pattern patternTelefono = Pattern.compile("[1-9]{9}");
 		Matcher matcherTelefono = patternTelefono.matcher(telefono);
 		coincide = matcherTelefono.matches();
 		return coincide;
 	}
 	public static boolean validarAsignatura(String asignatura){
 		boolean coincide = false;
-		Pattern patternAsigantura = Pattern.compile("[A-Z]{1}[a-z]{11}");
+		Pattern patternAsigantura = Pattern.compile("[A-Z]{1}[a-z]{1,11}");
 		Matcher matcherAsignatura = patternAsigantura.matcher(asignatura);
 		coincide = matcherAsignatura.matches();
 		return coincide;
@@ -64,14 +64,14 @@ public class Validador {
 	}
 	public static boolean validarDia(String dia){
 		boolean coincide = false;
-		Pattern patternDia = Pattern.compile("\\d{1-2}");
+		Pattern patternDia = Pattern.compile("\\d{1,2}");
 		Matcher matcherDia = patternDia.matcher(dia);
 		coincide = matcherDia.matches();
 		return coincide;
 	}
 	public static boolean validarMes(String mes){
 		boolean coincide = false;
-		Pattern patternMes = Pattern.compile("\\d{1-2}");
+		Pattern patternMes = Pattern.compile("\\d{1,2}");
 		Matcher matcherMes = patternMes.matcher(mes);
 		coincide = matcherMes.matches();
 		return coincide;

@@ -49,7 +49,7 @@ public class AplicacionSolicitud {
 			asignatura = sc.nextLine();
 			System.out.print("Días: ");
 			diasPropios = sc.nextLine();
-			System.out.println("Marcar días con x y si pone otro caracter sera entendido como no marcado");
+			System.out.println("Marcar días con + y con - si no; si pone otro caracter sera entendido como no marcado");
 			System.out.print("Dia Lectivo 1: ");
 			temp = sc.next().charAt(0);
 			diaLectivo1 = Validador.comprobarMarcas(temp);
@@ -63,19 +63,22 @@ public class AplicacionSolicitud {
 			temp = sc.next().charAt(0);
 			diaNoLectivo = Validador.comprobarMarcas(temp);
 			System.out.print("Dia: ");
+			sc.nextLine();
 			dia = sc.nextLine();
 			System.out.print("Mes: ");
 			mes = sc.nextLine();
 			System.out.print("Ultimo dígito año: ");
 			ultimoNAnio = sc.nextLine();
-			System.out.print("Firme con un + : ");
+			System.out.println("Firme con un + : ");
+			sc.next();
 			firma = true;
+			sc.nextLine();
 			
 			fechaValida = Validador.validarFecha(fecha);
 			horaValida = Validador.validarHora(hora);
 			nombreValido = Validador.validarNombre(nombre);
 			dniValido = Validador.validarDni(dni);
-			telefonoValido = Validador.validarFecha(telefono);
+			telefonoValido = Validador.validarTelefono(telefono);
 			asignaturaValida = Validador.validarAsignatura(asignatura);
 			diasPropiosValido = Validador.validarDias(diasPropios);
 			diaValido = Validador.validarDia(dia);

@@ -1,4 +1,4 @@
-package Unidad7Ejercicios;
+package unidad7Ejercicios;
 
 public class DatosCuenta {
 

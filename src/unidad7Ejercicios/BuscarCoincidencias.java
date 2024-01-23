@@ -1,4 +1,4 @@
-package Unidad7Ejercicios;
+package unidad7Ejercicios;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

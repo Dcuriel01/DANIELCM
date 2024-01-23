@@ -1,4 +1,4 @@
-package Unidad7Ejercicios;
+package unidad7Ejercicios;
 
 import java.security.SecureRandom;
 import java.time.LocalDate;

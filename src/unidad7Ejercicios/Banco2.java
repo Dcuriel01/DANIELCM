@@ -1,11 +1,11 @@
-package Unidad7Ejercicios;
+package unidad7Ejercicios;
 
 import java.security.SecureRandom;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class Banco3 {
+public class Banco2 {
 	public static SecureRandom random = new SecureRandom();
 
 	public static void main(String[] args) {
@@ -15,61 +15,28 @@ public class Banco3 {
 		String numero = null;
 		String fecha = null;
 		String cvv = null;
-		int opcion = 0;
 		Scanner sc = new Scanner(System.in);
-		boolean salir=false;
 		
+		System.out.println("¿De que marca es su tarjeta?");
+		marca = sc.next();
+		System.out.println("¿De que entidad es su tarjeta?");
+		entidad = sc.next();
+		System.out.println("El resto de datos serán generados automáticamente");
+		numero = generarNumero();
+		fecha = generarFecha();
+		cvv = generarCvv();
 		
-		do {
-			System.out.println("MENÚ");
-			System.out.println("1. Calcular tarjeta de crédito random");
-			System.out.println("2. Salir");
-			opcion = sc.nextInt();
-			switch (opcion) {
-			case 1:
-				System.out.println("Los datos serán generados automáticamente");
-				marca = generarMarca();
-				entidad = generarEntidad();
-				numero = generarNumero();
-				fecha = generarFecha();
-				cvv = generarCvv();
-				
-				TarjetaCredito tarjeta1 = generarTarjeta(marca,entidad,numero,fecha,cvv);
-				imprimirDatos(tarjeta1);
-				break;
-			case 2:
-				salir=true;
-				break;
-
-			default:
-				break;
-			}
-		} while (!salir);
+		TarjetaCredito tarjeta1 = generarTarjeta(marca,entidad,numero,fecha,cvv);
+		imprimirDatos(tarjeta1);
 		sc.close();
 
 	}
 
-	private static String generarEntidad() {
-		String [] entidades = {"BBVA","Santander","Bankia","Sabadell","Unicaja","CaixaBank"};
-		String entidad;
-		int nRandom = random.nextInt(6);
-		entidad = entidades[nRandom];
-		return entidad;
-	}
-
-	private static String generarMarca() {
-		String [] marcas = {"MasterCard","Visa","Maestro","Cirrus","American Express","Discover"};
-		String marca;
-		int nRandom = random.nextInt(6);
-		marca = marcas[nRandom];
-		return marca;
-	}
-
 	private static String generarFecha() {
+		int x = random.nextInt(11);
 		DateTimeFormatter formatoFecha1 = DateTimeFormatter.ofPattern("MM/yy");
 		LocalDate fechaLocal = LocalDate.now();
-		int nRandom = random.nextInt(9)+1;
-		LocalDate fechaCaducidad = fechaLocal.plusYears(nRandom);
+		LocalDate fechaCaducidad = fechaLocal.plusYears(x);
 		String fechaCaducidadCadena = fechaCaducidad.format(formatoFecha1);
 		return fechaCaducidadCadena;
 	}

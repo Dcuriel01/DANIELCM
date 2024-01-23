@@ -1,4 +1,4 @@
-package Unidad7Ejercicios;
+package unidad7Ejercicios;
 
 public class Comprobaciones {
 		public static int comprobarCadenaLimite(String cadena, int limite) {

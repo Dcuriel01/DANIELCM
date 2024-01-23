@@ -1,4 +1,4 @@
-package Unidad6Ejercicios;
+package unidad6Ejercicios;
 
 public class DatosCovid {
 	private String nombre;

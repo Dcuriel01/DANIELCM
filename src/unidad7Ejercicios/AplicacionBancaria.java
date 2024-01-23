@@ -45,6 +45,7 @@ public class AplicacionBancaria {
 		}
 		} while (error);
 		System.out.println("Ha accedido a su cuenta");
+		SolicitudBancaria cuenta1 = new SolicitudBancaria(dni, fechaNac, "1,2,3,4,5,6");
 		
 		
 	}
@@ -62,9 +63,9 @@ public class AplicacionBancaria {
 			System.out.print(x);
 		}
 		System.out.println(" ");
-		System.out.println("Introduca los numeros que faltan con formato 0-0-0");
+		System.out.println("Introduca los numeros que faltan con formato 0 0 0");
 		numUsuario = sc.nextLine();
-		numUsuarioSplit=numUsuario.split("-");
+		numUsuarioSplit=numUsuario.split(" ");
 		for (int i = 0; i < numeroSecreto.length; i++) {
 			 if (!numeroSecreto[i].equals("*")) {
 				huecos[contador]=i;

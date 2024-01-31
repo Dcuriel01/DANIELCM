@@ -9,6 +9,7 @@ public class ProcesoAlmazara {
 	private double pesoMolturado;
 	private double aceiteExtraido;
 	private double aceiteFiltrado;
+	private Cliente cliente;
 	
 	public ProcesoAlmazara() {
 		pesoAceitunas = SimuladorAlmazara.generarCantidadAleatoria(Cantidades.CANTIDADES_MIN_ACEITUNAS, Cantidades.CANTIDADES_MAX_ACEITUNAS);
@@ -25,9 +26,17 @@ public class ProcesoAlmazara {
 		double porcetajeFiltracion = SimuladorAlmazara.generarPorcentajeAleatorio(Cantidades.CANTIDADES_MIN_FILTRACION, Cantidades.CANTIDADES_MAX_FILTRACION);
 		aceiteFiltrado = SimuladorAlmazara.aplicarPorcentaje(aceiteExtraido, porcetajeFiltracion);
 		
+		
+		
 	}
 	
 	
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 	public double getPesoAceitunas() {
 		return pesoAceitunas;
 	}
@@ -65,6 +74,11 @@ public class ProcesoAlmazara {
         System.out.println("Peso después de la molturación: " + formato.format(pesoMolturado) + " kg");
         System.out.println("Aceite extraído: " + formato.format(aceiteExtraido) + " litros");
         System.out.println("Aceite después de la filtración: " + formato.format(aceiteFiltrado) + " litros");
+        if (cliente!=null) {
+        	System.out.println("CLIENTE ______");
+			cliente.mostrarDatos();
+		}
+        System.out.println();
 	}
 	
 	

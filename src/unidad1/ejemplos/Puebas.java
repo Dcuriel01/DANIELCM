@@ -2,6 +2,7 @@ package unidad1.ejemplos;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Scanner;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -12,37 +13,16 @@ import javax.swing.JOptionPane;
 import interfacesGraficas.RadarTramo2;
 
 public class Puebas extends JFrame {
-	
+public static Scanner sc = new Scanner(System.in);	
 public static void main(String[] args) {
-	new Puebas();
-	
-	
+	String datosIntro=null;
+	int datosIntroN=0;
+	System.out.println(" ");
+	datosIntro = sc.nextLine();
+	if (datosIntro.matches("[1-9]\\d{0,100}")) {
+		System.out.println("Hola");
+	}else {
+		System.out.println("Adios");
 	}
-	public Puebas() {
-		JOptionPane mensajeError = new JOptionPane();
-		setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		JLabel error = new JLabel();
-		error.setText("Error");
-	    add(error);
-	    setSize(300, 200);
-	    setTitle("Error");
-	    JButton salir = new JButton("Salir");
-        salir.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Puebas puebas = new Puebas();
-				puebas.dispose();
-            }
-        });
-        add(salir);
-	    setSize(300, 200);
-	    
-       
-        	
-
-	    // Mostrar la ventana
-	    setLocationRelativeTo(null);
-	    setVisible(true);
 	}
 }

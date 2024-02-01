@@ -58,9 +58,9 @@ public class AplicacionBancaria {
 		boolean error = true;
 		int contador = 0;
 		int [] huecos = new int [3];
-		numeroSecreto[0]="*";
-		numeroSecreto[1]="*";
-		numeroSecreto[2]="*";
+		numeroSecreto[n1]="*";
+		numeroSecreto[n2]="*";
+		numeroSecreto[n3]="*";
 		for (String x : numeroSecreto) {
 			System.out.print(x);
 		}

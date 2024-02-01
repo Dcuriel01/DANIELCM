@@ -15,7 +15,7 @@ public class Tabla extends JFrame{
 	
 	public Tabla(Empleado empleado1, Empleado empleado2, Empleado empleado3) {
 		initComponents(empleado1,empleado2,empleado3);
-		setTitle("Teléfonos");
+		setTitle("Empleados");
 		setSize(500, 300);
 	}
 	

@@ -70,7 +70,7 @@ public class RadarTramo2 extends JFrame {
 
 	private static void comprobarDatos() {
 		String texto;
-		for (int j = 0; j < 3; j++) {
+		for (int j = 0; j < 1; j++) {
 			texto = comprobarResultado(lineasTexto[j]);//recorro este bucle com el metodo tantas veces como datos tenemos introducidos
 			mensaje.append(texto).append("\n");
 		}

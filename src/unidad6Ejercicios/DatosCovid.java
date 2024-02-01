@@ -7,4 +7,5 @@ public class DatosCovid {
 	private String Resultado;
 	private TipoPrueba tipoPrueba;
 	private String lugarProceso;
+	private Paciente paciente;
 }

@@ -2,6 +2,8 @@ package unidad7Ejercicios;
 
 import java.util.Scanner;
 
+import unidad7Ejercicios.solicitudPermisos.Validador;
+
 public class Reloj {
 
 	public static void main(String[] args) {

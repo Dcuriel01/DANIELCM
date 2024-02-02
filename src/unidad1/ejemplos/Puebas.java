@@ -15,14 +15,18 @@ import interfacesGraficas.RadarTramo2;
 public class Puebas extends JFrame {
 public static Scanner sc = new Scanner(System.in);	
 public static void main(String[] args) {
-	String datosIntro=null;
-	int datosIntroN=0;
-	System.out.println(" ");
-	datosIntro = sc.nextLine();
-	if (datosIntro.matches("[1-9]\\d{0,100}")) {
-		System.out.println("Hola");
+	
+
+	String lectura=null;
+	double numero=0;
+	System.out.println();
+	lectura = sc.nextLine();
+	if (lectura.matches("[1-9]\\d{0,100}+.[1-9]\\d{0,100}")) {
+		lectura.replace(".", ",");
+		numero = Double.parseDouble(lectura);
+		System.out.println(numero);
 	}else {
-		System.out.println("Adios");
+		System.out.println("Error en el numero");
 	}
-	}
+}
 }

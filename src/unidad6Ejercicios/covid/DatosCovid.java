@@ -8,14 +8,12 @@ public class DatosCovid {
 	private String lugarProceso;
 	private Paciente paciente;
 	public DatosCovid(Covid tipoTest, boolean infeccionActiva, String resultado, TipoPrueba tipoPrueba,
-			String lugarProceso, Paciente paciente) {
-		super();
+			String lugarProceso) {
 		this.tipoTest = tipoTest;
 		this.infeccionActiva = infeccionActiva;
 		this.resultado = resultado;
 		this.tipoPrueba = tipoPrueba;
 		this.lugarProceso = lugarProceso;
-		this.paciente = paciente;
 	}
 	public Covid getTipoTest() {
 		return tipoTest;
@@ -33,7 +31,7 @@ public class DatosCovid {
 		return resultado;
 	}
 	public void setResultado(String resultado) {
-		resultado = resultado;
+		this.resultado = resultado;
 	}
 	public TipoPrueba getTipoPrueba() {
 		return tipoPrueba;
@@ -59,6 +57,10 @@ public class DatosCovid {
 		System.out.println("Infeccion: " + infeccionActiva);
 		System.out.println("Resultado: " + resultado);
 		System.out.println("Infeccion: " + infeccionActiva);
+		if (paciente!=null) {
+			System.out.println("Datos Paciente------------");
+			paciente.mostrarDatos();
+		}
 		
 	}
 }

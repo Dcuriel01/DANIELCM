@@ -177,7 +177,7 @@ public class Empleado {
 		}else if (tipoEmpleo==ModoEmpleo.TIEMPO_COMPLETO) {
 			bonificacion=0.1;
 		}
-		bonificacion = sueldo*bonificacion;
+		bonificacion = sueldo + (sueldo*bonificacion);
 	return bonificacion;
 	}
 	public void informacionEmpelado() {
@@ -191,13 +191,13 @@ public class Empleado {
 		System.out.println("Sueldo: " + sueldo);
 		System.out.println("Sueldo con bonifcación: " + bonificacion);
 	}
-	public void nOperarios() {
+	public static void nOperarios() {
 		System.out.println("El número de operarios es: " + contadorOperarios);
 	}
-	public void nJefes() {
+	public static void nJefes() {
 		System.out.println("El número de jefes es: " + contadorJefes);
 	}
-	public void rangosSalarios() {
+	public static void rangosSalarios() {
 		System.out.println("Entre el rango de sueldo de 0 a 1200 hay " + contadorRango1200 + " trabajadores");
 		System.out.println("Entre el rango de sueldo de 1200 a 2500 hay " + contadorRango12002500 + " trabajadores");
 		System.out.println("Entre el rango de sueldo de mas 2500 hay " + contadorRango2500 + " trabajadores");

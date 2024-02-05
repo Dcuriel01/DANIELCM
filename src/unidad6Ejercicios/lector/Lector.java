@@ -26,10 +26,8 @@ public class Lector {
 	}
 	
 	public static double leerDouble() {
-		String lectura=null;
 		double numero=0;
-		lectura = sc.nextLine();
-		numero = Double.parseDouble(lectura);
+		numero = sc.nextDouble();
 		return numero;
 	}
 	

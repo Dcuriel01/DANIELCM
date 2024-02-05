@@ -1,5 +1,7 @@
 package unidad6Ejercicios.serigrafia;
 
+import java.util.Scanner;
+
 import unidad6Ejercicios.lector.Lector;
 
 public class ProgramaCamisetas {
@@ -14,14 +16,15 @@ public class ProgramaCamisetas {
 	}
 
 	private static void introducirCamisetas(Camisetas[] camisetas) {
-		int id;
-		String descrip;
-		Materiales material;
-		String materialUser;
-		String color;
-		double precio;
-		int stock;
+		Scanner sc = new Scanner(System.in);
 		for (int i = 0; i < nCamisetas; i++) {
+			int id;
+			String descrip;
+			Materiales material=null;
+			String materialUser;
+			String color;
+			double precio;
+			int stock;
 			System.out.print("ID:");
 			id = Lector.leerInt();
 			System.out.print("Descripción:");
@@ -40,18 +43,26 @@ public class ProgramaCamisetas {
 			System.out.print("Color:");
 			color = Lector.leerLinea();
 			System.out.print("Precio:");
-			precio = Lector.leerDouble();
+			precio = sc.nextDouble();
 			System.out.print("Stock:");
 			stock = Lector.leerInt();
-			
+			declararCamiseta(id,descrip,material,color,precio,stock,camisetas,i);
 		}
+		
+	}
+
+	private static void declararCamiseta(int id,String descrip, Materiales material, String color, double precio, int stock,
+			Camisetas[] camisetas , int i) {
+		camisetas[i]=new Camisetas(id, descrip, material, color, precio, stock);
 		
 	}
 
 	private static void mostrarDatosCamiseta(Camisetas[] camisetas) {
 		for (int i = 0; i < nCamisetas; i++) {
-			System.out.println(i + "º Camiseta");
-			camisetas[i].imprimirDatos();
+			if (camisetas!=null) {
+				System.out.println((i+1) + "º Camiseta");
+				camisetas[i].imprimirDatos();
+			}
 		}
 		
 	}

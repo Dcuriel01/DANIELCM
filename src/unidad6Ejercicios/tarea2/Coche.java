@@ -6,9 +6,10 @@ public class Coche {
 	private String marca;
 	private String modelo;
 	private double precioAcumuladoAveria;
-	public Coche(String marca, String modelo) {
+	public Coche(String marca, String modelo, int cv) {
 		this.marca = marca;
 		this.modelo = modelo;
+		motor = new Motor(cv);
 	}
 	
 	public Motor getMotor() {

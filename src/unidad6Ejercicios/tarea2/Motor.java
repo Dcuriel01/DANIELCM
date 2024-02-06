@@ -12,7 +12,7 @@ public class Motor {
 		return lAceite;
 	}
 	public void setlAceite(int lAceite) {
-		this.lAceite = lAceite;
+		this.lAceite = this.lAceite + lAceite;
 	}
 	public int getCv() {
 		return cv;

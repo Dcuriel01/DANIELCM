@@ -6,12 +6,22 @@ public class Coche {
 	private String marca;
 	private String modelo;
 	private double precioAcumuladoAveria;
+	private boolean garaje = false;
 	public Coche(String marca, String modelo, int cv) {
 		this.marca = marca;
 		this.modelo = modelo;
 		motor = new Motor(cv);
 	}
 	
+	
+	
+	public boolean isGaraje() {
+		return garaje;
+	}
+	
+	public void setGaraje(boolean garaje) {
+		this.garaje = garaje;
+	}
 	public Motor getMotor() {
 		return motor;
 	}

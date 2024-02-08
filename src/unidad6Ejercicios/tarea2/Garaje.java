@@ -16,13 +16,16 @@ public class Garaje {
 			this.averia=averia;
 			cochesAtendidos++;
 			cobrarAveria(c1,averia);
+			c1.setGaraje(true);
 			hueco=false;
 		return hueco;
 	}
 	private void cobrarAveria(Coche c1, String averia) {
-		c1.acumularAveria(Math.random()*1000);
 		if (averia.equals("aceite")) {
 			c1.getMotor().setlAceite(10);
+			c1.acumularAveria(Math.random()*10);
+		}else {
+			c1.acumularAveria(Math.random()*1000);
 		}
 		
 	}
@@ -35,6 +38,11 @@ public class Garaje {
 
 	public static boolean isHueco() {
 		return hueco;
+	}
+	
+
+	public static void setHueco(boolean hueco) {
+		Garaje.hueco = hueco;
 	}
 
 	public static int getCochesAtendidos() {

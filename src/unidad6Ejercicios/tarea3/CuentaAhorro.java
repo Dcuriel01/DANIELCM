@@ -58,6 +58,7 @@ public class CuentaAhorro {
 	public void imprimirCuenta() {
 		System.out.println("Número de cuenta: " + nCuenta);
 		System.out.println("Saldo en la cuenta: " + saldo);
+		System.out.println("El interes es de: " + interes);
 	}
 	
 	public void compararCuentas(CuentaAhorro CA1) {

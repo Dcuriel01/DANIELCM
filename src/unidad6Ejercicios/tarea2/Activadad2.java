@@ -18,7 +18,8 @@ public class Activadad2 {
 			opcion = menu();
 			switch (opcion) {
 			case 1:
-				System.out.println("¿Cuál es la avería?");
+				if (!c1.isGaraje()) {
+					System.out.println("¿Cuál es la avería?");
 				sc.nextLine();
 				averia=sc.nextLine();
 				hueco = Garaje.isHueco();
@@ -28,9 +29,35 @@ public class Activadad2 {
 					garaje.aceptarCoche(c1,averia);
 					System.out.println("Coche en reparación");
 				}
+				}else {
+					char respuesta;
+					System.out.println("Ese coche esta ahora mismo en el garaje");
+					System.out.println("Desea reparar alguna averia mas (S/N)");
+					respuesta = sc.next().charAt(0);
+					switch (respuesta) {
+					case 'S':
+						Garaje.setHueco(true);
+						System.out.println("¿Cuál es la avería?");
+						sc.nextLine();
+						averia=sc.nextLine();
+						garaje.aceptarCoche(c1,averia);
+						System.out.println("Solucionado también esa avería");
+						break;
+
+					case 'N':
+						System.out.println("ok");
+						break;
+					default:
+						System.out.println("No reconocido");
+						break;
+					}
+					
+				}
+				
 				break;
 			case 2:
-				System.out.println("¿Cuál es la avería?");
+				if (!c2.isGaraje()) {
+					System.out.println("¿Cuál es la avería?");
 				sc.nextLine();
 				averia=sc.nextLine();
 				hueco = Garaje.isHueco();
@@ -40,6 +67,31 @@ public class Activadad2 {
 					garaje.aceptarCoche(c2,averia);
 					System.out.println("Coche en reparación");
 				}
+				}else {
+					char respuesta;
+					System.out.println("Ese coche esta ahora mismo en el garaje");
+					System.out.println("Desea reparar alguna averia mas (S/N)");
+					respuesta = sc.next().charAt(0);
+					switch (respuesta) {
+					case 'S':
+						Garaje.setHueco(true);
+						System.out.println("¿Cuál es la avería?");
+						sc.nextLine();
+						averia=sc.nextLine();
+						garaje.aceptarCoche(c2,averia);
+						System.out.println("Solucionado también esa avería");
+						break;
+
+					case 'N':
+						System.out.println("ok");
+						break;
+					default:
+						System.out.println("No reconocido");
+						break;
+					}
+					
+				}
+				
 				break;
 			case 3:
 				hueco= Garaje.isHueco();

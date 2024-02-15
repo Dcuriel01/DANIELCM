@@ -10,7 +10,7 @@ public class ValidadorBancario {
 		Pattern patternFecha = Pattern.compile("\\d{2}-\\d{2}-\\d{4}");
 		Matcher matcherFecha = patternFecha.matcher(fecha);
 		if (matcherFecha.matches()) {
-			if (fecha.equals("27-10-2005")) {
+			if (fecha.equals("11-02-2006")) {
 				coincide = true;
 			}else {
 				System.out.println("Error en la fecha");

@@ -16,17 +16,8 @@ public class Puebas extends JFrame {
 public static Scanner sc = new Scanner(System.in);	
 public static void main(String[] args) {
 	
-
-	String lectura=null;
-	double numero=0;
-	System.out.println();
-	lectura = sc.nextLine();
-	if (lectura.matches("[1-9]\\d{0,100}+.[1-9]\\d{0,100}")) {
-		lectura.replace(".", ",");
-		numero = Double.parseDouble(lectura);
-		System.out.println(numero);
-	}else {
-		System.out.println("Error en el numero");
-	}
+for (int i = 0; i < 5; i++) {
+	System.out.println(i);
+}
 }
 }

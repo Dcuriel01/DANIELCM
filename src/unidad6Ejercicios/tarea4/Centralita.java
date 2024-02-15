@@ -20,7 +20,7 @@ public class Centralita {
 			nLlamadas++;
 			saldoTotal = saldoTotal+precio;
 			imprimirDatos(llamadas[i],precio);
-			Thread.sleep(2*1000);
+			Thread.sleep(1*1000);
 		}
 	}
 

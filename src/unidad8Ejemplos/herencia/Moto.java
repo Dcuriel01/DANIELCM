@@ -1,4 +1,4 @@
-package unidad8Ejemplos;
+package unidad8Ejemplos.herencia;
 
 public class Moto extends Vehiculo{
 

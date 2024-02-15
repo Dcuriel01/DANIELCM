@@ -1,4 +1,4 @@
-package unidad8Ejemplos;
+package unidad8Ejemplos.herencia;
 
 public class Coche extends Vehiculo {
 	

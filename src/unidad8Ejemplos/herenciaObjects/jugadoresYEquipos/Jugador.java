@@ -1,4 +1,4 @@
-package unidad8Ejemplos.herenciaObjects;
+package unidad8Ejemplos.herenciaObjects.jugadoresYEquipos;
 
 public class Jugador {
 

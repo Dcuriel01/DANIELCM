@@ -1,4 +1,4 @@
-package unidad8Ejemplos.herenciaObjects;
+package unidad8Ejemplos.herenciaObjects.jugadoresYEquipos;
 
 public class CompararEquipos {
 
@@ -19,22 +19,7 @@ public class CompararEquipos {
 		jugadores2[4]=new Jugador("Sergio","Ramos","Defensa");
 		Equipo equipo2 = new Equipo(jugadores2,"Real Madrid","Madrid");
 		
-		if (equipo1.equals(equipo2)) {
-			
-			boolean desigual = false;
-			
-			for (int i = 0; i < jugadores1.length; i++) {
-				for (int j = 0; j < jugadores2.length; j++) {
-					if (jugadores1[i].equals(jugadores2[j])) {
-						j=jugadores2.length;
-					}
-					if (j==jugadores1.length-1) {
-						desigual=true;
-					}
-				}
-				
-			}
-			if (!desigual) {
+			if (equipo1.equals(equipo2)) {
 				System.out.println("Los equipos son exactamente iguales");
 			}else {
 				System.out.println("Los equipos no son exactamente iguales");
@@ -42,5 +27,3 @@ public class CompararEquipos {
 			
 		}
 	}
-
-}

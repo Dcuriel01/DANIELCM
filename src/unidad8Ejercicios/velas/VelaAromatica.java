@@ -15,7 +15,7 @@ public class VelaAromatica extends Vela{
 	@Override
 	public void setAltura(int altura) {
 		precio = altura*3;
-		super.setAltura(altura);
+		this.altura=altura;
 	}
 	
 	

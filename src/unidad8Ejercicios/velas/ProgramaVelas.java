@@ -11,8 +11,8 @@ public class ProgramaVelas {
 		vela2.setColor("Verde");
 		vela2.setAltura(4);
 		vela2.setAroma("Lima");
-		System.out.println(vela2.getPrecio()); 
-		System.out.println(vela1.getPrecio()); 
+		System.out.println("Precio vela aromatica "+vela2.getPrecio()); 
+		System.out.println("Precio vela normal "+vela1.getPrecio()); 
 		
 	}
 

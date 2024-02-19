@@ -3,7 +3,7 @@ package unidad8Ejercicios.velas;
 public class Vela {
 
 	private String color;
-	private int altura;
+	protected int altura;
 	protected double precio;
 	
 	public String getColor() {

@@ -69,6 +69,5 @@ public class Equipo {
 
 	public void setLocalidad(String localidad) {
 		this.localidad = localidad;
-	}
-
+	}	
 }

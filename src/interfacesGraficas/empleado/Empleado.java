@@ -1,4 +1,4 @@
-package interfacesGraficas;
+package interfacesGraficas.empleado;
 
 public class Empleado {
 	private String nombre;

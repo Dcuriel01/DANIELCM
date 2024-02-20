@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-import interfacesGraficas.RadarTramo2;
+import interfacesGraficas.radar.RadarTramo2;
 
 public class Puebas extends JFrame {
 public static Scanner sc = new Scanner(System.in);	

@@ -1,4 +1,4 @@
-package interfacesGraficas;
+package interfacesGraficas.radar;
 
 import java.awt.BorderLayout;
 import java.awt.event.WindowEvent;
@@ -7,6 +7,8 @@ import java.math.BigDecimal;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+
+import interfacesGraficas.empleado.Empleado;
 
 public class Tabla extends JFrame{
 	

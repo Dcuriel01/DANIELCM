@@ -1,4 +1,6 @@
-package interfacesGraficas;
+package interfacesGraficas.empleado;
+
+import interfacesGraficas.radar.Tabla;
 
 public class ProgramaEmpleado {
 

@@ -1,4 +1,4 @@
-package interfacesGraficas;
+package interfacesGraficas.radar;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

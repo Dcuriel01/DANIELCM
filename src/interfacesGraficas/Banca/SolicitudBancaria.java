@@ -1,4 +1,4 @@
-package interfacesGraficas;
+package interfacesGraficas.Banca;
 
 public class SolicitudBancaria {
 

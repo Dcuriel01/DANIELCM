@@ -1,4 +1,4 @@
-package interfacesGraficas;
+package interfacesGraficas.Banca;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -28,7 +28,7 @@ public class ValidadorBancario {
 		Pattern patternDni = Pattern.compile("[1-9]{8}[A-Z]{1}");
 		Matcher matcherDni = patternDni.matcher(dni);
 		if (matcherDni.matches()) {
-			if (dni.equals("12345678Z")) {
+			if (dni.equals("76743674B")) {
 				coincide = true;
 			}else {
 				

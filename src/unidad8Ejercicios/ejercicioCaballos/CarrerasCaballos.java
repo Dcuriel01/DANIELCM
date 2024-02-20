@@ -17,7 +17,10 @@ public class CarrerasCaballos extends Caballo {
 		this.numCarrerasComp = numCarrerasComp;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return super.toString()+" y ha corrido un total de " + numCarrerasComp + " carreras";
+	}
 	
 	
 }

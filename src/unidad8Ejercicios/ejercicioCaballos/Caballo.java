@@ -40,7 +40,7 @@ public class Caballo {
 	@Override
 	public String toString() {
 		
-		return "El caballo se llama: " + nombre + " es de color " + color + " y nacio en el año " + anioNac + " ";
+		return "El caballo se llama: " + nombre + " es de color " + color + " y nacio en el año " + anioNac;
 	}
 	
 }

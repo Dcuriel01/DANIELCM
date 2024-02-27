@@ -2,6 +2,7 @@ package unidad1.ejemplos;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.security.SecureRandom;
 import java.util.Scanner;
 
 import javax.swing.BoxLayout;
@@ -12,12 +13,10 @@ import javax.swing.JOptionPane;
 
 import interfacesGraficas.radar.RadarTramo2;
 
-public class Puebas extends JFrame {
-public static Scanner sc = new Scanner(System.in);	
-public static void main(String[] args) {
-	
-for (int i = 0; i < 5; i++) {
-	System.out.println(i);
-}
-}
+public class Puebas{
+	public static void main(String[]args) {
+	SecureRandom random = new SecureRandom();
+	int nAleatorio = random.nextInt(4);
+	System.out.println(nAleatorio);
+	}
 }

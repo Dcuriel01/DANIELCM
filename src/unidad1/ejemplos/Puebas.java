@@ -1,6 +1,7 @@
 package unidad1.ejemplos;
 
 import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 import java.security.SecureRandom;
 import java.util.Iterator;
@@ -14,7 +15,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import interfacesGraficas.radar.RadarTramo2;
-import unidad8Ejercicios.campoFutbol.ConstantesFutbol;
 
 public class Puebas{
 	public static void main(String[]args) {

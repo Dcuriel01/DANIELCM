@@ -1,4 +1,4 @@
-package unidad9.ejemplos;
+package unidad9.ejemplos.listasUsuarios;
 
 import java.util.ArrayList;
 import java.util.Arrays;

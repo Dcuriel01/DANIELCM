@@ -1,4 +1,4 @@
-package unidad9.ejemplos;
+package unidad9.ejemplos.listasUsuarios;
 
 public class Usuario {
 

@@ -50,6 +50,7 @@ public class Articulo {
 			pedidosRealizados=pedidosRealizados+cantidad;
 		}else {
 			System.out.println("No hay suficientes");
+			System.out.println("Solo se ha podido pedir " + (cantidadesTallas.get(talla)-cantidad) + " Productos ");
 			pedidosPendientes=pedidosPendientes+(cantidad-cantidadesTallas.get(talla));
 			pedidosRealizados=pedidosRealizados-(cantidadesTallas.get(talla)-cantidad);
 			cantidadesTallas.replace(talla,0);

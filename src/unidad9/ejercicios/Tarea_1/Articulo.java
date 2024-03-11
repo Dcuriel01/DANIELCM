@@ -12,6 +12,7 @@ public class Articulo {
 	private Map<Integer, Integer> cantidadesTallas;
 	private int pedidosPendientes=0;
 	private int pedidosRealizados=0;
+	private int pedidosDevueltos=0;
 	
 	public Articulo(String nombre) {
 		super();
@@ -55,11 +56,27 @@ public class Articulo {
 			pedidosRealizados=pedidosRealizados-(cantidadesTallas.get(talla)-cantidad);
 			cantidadesTallas.replace(talla,0);
 		}
-		
-		
 	}
+		public void sumarDevolucion(int talla,int cantidad) {
+			cantidadesTallas.replace(talla,cantidadesTallas.get(talla)+cantidad);
+			System.out.println("Pedido devuelto");
+			pedidosDevueltos=pedidosDevueltos+cantidad;
+	}
+		
 	public String mostrarPedidos() {
-		return "Nombre producto: " + nombre + " pedidos realizados " + pedidosRealizados + " pedidos pendientes " + pedidosPendientes;
+		return "Nombre producto: " + nombre + "\n" 
+				+ " pedidos realizados " + pedidosRealizados + "\n" 
+				+ " pedidos pendientes " + pedidosPendientes + "\n" 
+				+ " pedidos devueltos " + pedidosDevueltos;
+	}
+	public String mostrarStock() {
+		return " Arículo " + nombre +"\n"
+				+ "Talla xs:" + cantidadesTallas.get(0)+"\n"
+				+ "Talla s:" + cantidadesTallas.get(1)+"\n"
+				+ "Talla m:" + cantidadesTallas.get(2)+"\n"
+				+ "Talla l:" + cantidadesTallas.get(3)+"\n"
+				+ "Talla xl:" + cantidadesTallas.get(4)
+				;
 	}
 	
 	

@@ -46,10 +46,14 @@ public class Inventario {
 		
 	}
 	
+	public void mostrarStockParticular(int id) {
+		System.out.println("Stock");
+		System.out.println("id: " + id + articulos.get(id).mostrarStock());
+	}
 	public void mostrarStock() {
 		System.out.println("Stock");
 		for (int id : articulos.keySet()) {
-			System.out.println("id: " + id + " cantidad: " + articulos.get(id));
+			System.out.println("id: " + id + articulos.get(id).mostrarStock());
 		}
 	}
 	public void mostrarPedidos() {
@@ -57,6 +61,10 @@ public class Inventario {
 		for (int id : articulos.keySet()) {
 			System.out.println(articulos.get(id).mostrarPedidos());
 		}
+	}
+	public void mostrarPedidosParticular(int id) {
+		System.out.println("Pedidos");
+		System.out.println(articulos.get(id).mostrarPedidos());
 	}
 	
 	

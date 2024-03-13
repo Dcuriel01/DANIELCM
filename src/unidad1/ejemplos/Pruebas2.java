@@ -1,15 +1,16 @@
 package unidad1.ejemplos;
 
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class Pruebas2 {
 
 	public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	String nombre;
-	System.out.println(" ");
-	nombre = sc.nextLine();
-	System.out.println(nombre);
+
+		System.out.println(ChronoUnit.DAYS.between(LocalDate.of(2024, 3, 12), LocalDate.now()));
+		
 	}	
 
 }

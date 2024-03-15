@@ -31,7 +31,6 @@ public class ContolAgenda {
 		agenda.eliminarEvento(recordatorio);
 		System.out.println("--------");
 		agenda.mostrarTodosEventos();
-
 		
 		/*
 		System.out.println("Por favor, introduce una fecha en el formato yyyy-MM-dd:");

@@ -4,6 +4,8 @@ import java.awt.event.ActionEvent;
 
 import java.awt.event.ActionListener;
 import java.security.SecureRandom;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -19,12 +21,15 @@ import interfacesGraficas.radar.RadarTramo2;
 public class Puebas{
 	public static void main(String[]args) {
 
-		String hola = "1232 HJG";
-		if (hola.matches("[0-9]{4}\\s[A-Z]{3}")) {
-			System.out.println("hola");
+		SecureRandom random = new SecureRandom();
+		int numAleatorio = random.nextInt(9999);
+		String numS=" ";
+		if (numAleatorio<1000) {
+			numS="0"+ numAleatorio;
 		}else {
-			System.out.println("Adios");
+			numS=""+numAleatorio;
 		}
+		System.out.println(numS);
 		
 		
 	}

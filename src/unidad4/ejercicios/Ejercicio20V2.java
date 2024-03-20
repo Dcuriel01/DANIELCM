@@ -2,6 +2,8 @@ package unidad4.ejercicios;
 
 import java.util.Scanner;
 
+import unidad10.ejemplos.PedirEnteroControlado;
+
 public class Ejercicio20V2 {
 
 	public static Scanner entrada = new Scanner(System.in);
@@ -54,7 +56,7 @@ public class Ejercicio20V2 {
 		System.out.println("4. Calcular todo");
 		System.out.println("5. Salir");
 		System.out.println("---------------");
-		opcion = entrada.nextInt();
+		opcion = PedirEnteroControlado.pedirEntero();	
 		return opcion;
 		
 		

@@ -35,17 +35,17 @@ public class ProgramasPaquetes {
 			}
 		}
 
-		/*mostrarPaquetesPorZona();
+		mostrarPaquetesPorZona();
 		System.out.println(" ");
 		mostrarPaquetesPorEmpresa();
-		System.out.println(" ");*/
+		System.out.println(" ");
 		mostrarPaquetesExternosEnOrden();
-		/*System.out.println(" ");
+		System.out.println(" ");
 		mostrarCantidadUrgentes();
 		System.out.println(" ");
 		mostrarCantidadNoUrgentes();
 		System.out.println(" ");
-		mostrarPaquetesConCostes();*/
+		mostrarPaquetesConCostes();
 
 	}
 

@@ -11,6 +11,7 @@ public class Externo extends Paquete {
 		super(id, peso, fechaEntrega);
 		setPrecioEnvio();
 		setNumSeguimiento();
+		
 	}
 
 	public void setPrecioEnvio() {

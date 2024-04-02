@@ -1,0 +1,50 @@
+2014, Estados Unidos, 5000
+2014, China, 10000
+2014, India, 2200
+2014, Rusia, 1600
+2014, Brasil, 500
+2015, Estados Unidos, 5100
+2015, China, 10200
+2015, India, 2300
+2015, Rusia, 1620
+2015, Brasil, 505
+2016, Estados Unidos, 4950
+2016, China, 10400
+2016, India, 2400
+2016, Rusia, 1580
+2016, Brasil, 510
+2017, Estados Unidos, 4850
+2017, China, 10600
+2017, India, 2450
+2017, Rusia, 1550
+2017, Brasil, 515
+2018, Estados Unidos, 4750
+2018, China, 10800
+2018, India, 2500
+2018, Rusia, 1500
+2018, Brasil, 520
+2019, Estados Unidos, 4700
+2019, China, 11000
+2019, India, 2550
+2019, Rusia, 1450
+2019, Brasil, 525
+2020, Estados Unidos, 4600
+2020, China, 11200
+2020, India, 2600
+2020, Rusia, 1400
+2020, Brasil, 530
+2021, Estados Unidos, 4500
+2021, China, 11400
+2021, India, 2650
+2021, Rusia, 1350
+2021, Brasil, 535
+2022, Estados Unidos, 4400
+2022, China, 11600
+2022, India, 2700
+2022, Rusia, 1300
+2022, Brasil, 540
+2023, Estados Unidos, 4300
+2023, China, 11800
+2023, India, 2750
+2023, Rusia, 1250
+2023, Brasil, 545

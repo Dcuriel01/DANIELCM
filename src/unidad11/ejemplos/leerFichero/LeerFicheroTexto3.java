@@ -1,4 +1,4 @@
-package unidad11.ejemplos;
+package unidad11.ejemplos.leerFichero;
 
 import java.io.BufferedReader;
 import java.io.File;

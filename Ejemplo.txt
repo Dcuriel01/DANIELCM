@@ -1,0 +1,3 @@
+a
+B
+Este mensaje es un ejemplo de uso de FileWriter

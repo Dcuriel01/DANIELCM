@@ -1,0 +1,3 @@
+Otro ejemplo de escribir en ficheros con PrintWriter
+Podemos escrbir Textos con formato
+Podemos escrbir 6 con formato

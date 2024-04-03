@@ -1,37 +1,30 @@
-package unidad11.ejemplos;
+package unidad11.ejemplos.leerFichero;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class LeerFicheroTexto2 {
+public class LeerFicheroTexto {
 
 	public static void main(String[] args) {
 	
 	System.out.println("Leer fichero");
 	String rutaFichero="mancomunidades_extremadura.txt";
-	BufferedReader lector = null;
+	
 	File fichero = new File(rutaFichero);
+	
+	FileReader lector = null;
 	try {
-		lector= new BufferedReader(new FileReader(fichero));
-		String cadena;
-		cadena = lector.readLine();
-		while (cadena != null) {
-			System.out.println(cadena);
-			cadena = lector.readLine();
+		lector = new FileReader(fichero);
+		int caracter;
+		while ((caracter = lector.read()) != -1) {
+			System.out.print((char)caracter);
 		}
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
 	} catch (IOException e) {
 		e.printStackTrace();
-	} finally {
-		try {
-			lector.close();
-		} catch (IOException e2) {
-			e2.printStackTrace();
-		}
 	}
 	
 		

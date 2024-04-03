@@ -1,4 +1,4 @@
-package interfacesGraficas.pruebas;
+package interfacesGraficas.ficheros;
 
 import java.awt.Color;
 import java.awt.Desktop;
@@ -9,18 +9,27 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.border.Border;
 
 public class Ventana extends JFrame {
-	private JTextArea areaTexto;
-	private StringBuilder mensaje = new StringBuilder();
+	private static JTextArea areaTexto;
+	private static StringBuilder mensaje = new StringBuilder();
+	private static LocalDateTime fecha = LocalDateTime.now();
+	private static DateTimeFormatter formato = DateTimeFormatter.ofPattern(" HH:mm dd/MM/yyyy");
+	private static String fechaFormat = fecha.format(formato);
+    private static String nombre;
+
+	
+
+
 	File ficheroEscritura = new File("ficheros//ficheroUser");
 	public Ventana(){
 		 	setTitle("Paso a ficheros");
@@ -50,8 +59,12 @@ public class Ventana extends JFrame {
 
 				private void escribirFichero(String texto) {
 					try(PrintWriter escritor = new PrintWriter(ficheroEscritura)) {
-						escritor.println("Texto introducido por un usuario");
 						escritor.println(texto);
+						if (nombre.equals("")) {
+							escritor.println("Escrito por: anonimo en el momento:"+fechaFormat);
+						}else {
+							escritor.println("Escrito por: " + nombre + " en el momento:"+fechaFormat);
+						}
 					} catch (FileNotFoundException e) {
 				
 						e.printStackTrace();
@@ -74,6 +87,12 @@ public class Ventana extends JFrame {
 				private void escribirFichero(String texto,boolean decision) {
 					try(PrintWriter escritor = new PrintWriter(new FileWriter(ficheroEscritura,true))) {
 						escritor.println(texto);
+						if (nombre.equals("")) {
+							escritor.println("Escrito por: anonimo en el momento:"+fechaFormat);
+						}else {
+							escritor.println("Escrito por: " + nombre + " en el momento:"+fechaFormat);
+						}
+						
 					} catch (FileNotFoundException e) {
 				
 						e.printStackTrace();
@@ -120,7 +139,8 @@ public class Ventana extends JFrame {
 	        setVisible(true);
 	}
 	public static void main(String[] args) {
-		//JOptionPane.showMessageDialog(null, "Introduzca el texto que desea pasar a ficheros");
+		nombre = JOptionPane.showInputDialog("Dime tu nombre");
+		JOptionPane.showMessageDialog(null, nombre + " introduzca el texto que desea pasar a ficheros");
 		new Ventana();
 	}
 

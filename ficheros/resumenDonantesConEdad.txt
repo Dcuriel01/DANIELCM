@@ -1,0 +1,240 @@
+Edad:64
+tipo:A- cantidad:2
+tipo:0+ cantidad:1
+tipo:B+ cantidad:1
+tipo:AB+ cantidad:1
+tipo:B- cantidad:1
+tipo:AB- cantidad:1
+
+Edad:65
+tipo:AB+ cantidad:1
+
+Edad:19
+tipo:A- cantidad:4
+tipo:0+ cantidad:3
+tipo:A+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:20
+tipo:B+ cantidad:1
+tipo:AB- cantidad:1
+
+Edad:21
+tipo:A- cantidad:4
+tipo:0+ cantidad:3
+tipo:A+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:22
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:23
+tipo:AB- cantidad:1
+
+Edad:25
+tipo:A- cantidad:2
+tipo:AB+ cantidad:1
+tipo:AB- cantidad:1
+
+Edad:26
+tipo:A- cantidad:2
+tipo:0+ cantidad:1
+tipo:B+ cantidad:1
+tipo:AB+ cantidad:1
+tipo:B- cantidad:1
+tipo:AB- cantidad:1
+
+Edad:27
+tipo:A- cantidad:4
+tipo:0+ cantidad:3
+tipo:A+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:28
+tipo:A+ cantidad:1
+
+Edad:29
+tipo:A- cantidad:2
+tipo:0+ cantidad:1
+tipo:B+ cantidad:1
+tipo:AB+ cantidad:1
+tipo:B- cantidad:1
+tipo:AB- cantidad:1
+
+Edad:30
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:31
+tipo:A- cantidad:2
+tipo:AB+ cantidad:1
+tipo:AB- cantidad:1
+
+Edad:32
+tipo:A- cantidad:4
+tipo:0+ cantidad:3
+tipo:A+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:33
+tipo:A- cantidad:2
+tipo:0+ cantidad:1
+tipo:B+ cantidad:1
+tipo:AB+ cantidad:1
+tipo:B- cantidad:1
+tipo:AB- cantidad:1
+
+Edad:34
+tipo:B+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB- cantidad:2
+
+Edad:35
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:36
+tipo:0- cantidad:1
+tipo:AB- cantidad:2
+
+Edad:37
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:38
+tipo:B+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB- cantidad:2
+
+Edad:39
+tipo:B+ cantidad:1
+
+Edad:41
+tipo:A- cantidad:4
+tipo:0+ cantidad:3
+tipo:A+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:42
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:43
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:44
+tipo:A- cantidad:4
+tipo:0+ cantidad:3
+tipo:A+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:45
+tipo:A- cantidad:1
+
+Edad:48
+tipo:0+ cantidad:2
+tipo:B+ cantidad:2
+tipo:A+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:49
+tipo:B- cantidad:1
+
+Edad:50
+tipo:A- cantidad:1
+tipo:B+ cantidad:2
+tipo:A+ cantidad:1
+tipo:AB- cantidad:1
+
+Edad:51
+tipo:A- cantidad:2
+tipo:0+ cantidad:1
+tipo:B+ cantidad:1
+tipo:AB+ cantidad:1
+tipo:B- cantidad:1
+tipo:AB- cantidad:1
+
+Edad:52
+tipo:A- cantidad:1
+tipo:B+ cantidad:2
+tipo:A+ cantidad:1
+tipo:AB- cantidad:1
+
+Edad:53
+tipo:A- cantidad:1
+tipo:B+ cantidad:2
+tipo:A+ cantidad:1
+tipo:AB- cantidad:1
+
+Edad:54
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:55
+tipo:B- cantidad:1
+
+Edad:56
+tipo:A- cantidad:4
+tipo:0+ cantidad:3
+tipo:A+ cantidad:2
+tipo:B- cantidad:1
+tipo:AB+ cantidad:2
+tipo:AB- cantidad:1
+
+Edad:58
+tipo:0+ cantidad:1
+tipo:AB+ cantidad:3
+tipo:B- cantidad:7
+tipo:AB- cantidad:1
+
+Edad:59
+tipo:B- cantidad:1
+tipo:AB- cantidad:1
+
+Edad:60
+tipo:A- cantidad:2
+tipo:0+ cantidad:1
+tipo:B+ cantidad:1
+tipo:AB+ cantidad:1
+tipo:B- cantidad:1
+tipo:AB- cantidad:1
+
+Edad:61
+tipo:A- cantidad:1
+tipo:B+ cantidad:1
+tipo:B- cantidad:1
+tipo:0- cantidad:1
+
+Edad:63
+tipo:A- cantidad:2
+tipo:AB+ cantidad:1
+tipo:AB- cantidad:1
+

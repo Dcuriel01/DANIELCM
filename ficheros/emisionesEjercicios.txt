@@ -1,0 +1,19 @@
+Emisiones por años
+Año:2016 Emisiones:19840
+Año:2017 Emisiones:19965
+Año:2018 Emisiones:20070
+Año:2019 Emisiones:20225
+Año:2020 Emisiones:20330
+Año:2021 Emisiones:20435
+Año:2022 Emisiones:20540
+Año:2023 Emisiones:20645
+Año:2014 Emisiones:19300
+Año:2015 Emisiones:19725
+
+Emisiones por paises
+País:Brasil Emisiones:5225
+País:Rusia Emisiones:14600
+País:China Emisiones:109000
+País:Estados Unidos Emisiones:47150
+País:India Emisiones:25100
+

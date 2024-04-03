@@ -1,16 +1,22 @@
 package unidad1.ejemplos;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class Pruebas2 {
-
+	static File ficheroEscritura = new File("ficheros//ficheroUser");
 	public static void main(String[] args) {
 
-		System.out.println(ChronoUnit.DAYS.between(LocalDate.of(2024, 3, 12), LocalDate.now()));
-		
+		try {
+			Desktop.getDesktop().open(ficheroEscritura);
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}		
 	}	
 
 }

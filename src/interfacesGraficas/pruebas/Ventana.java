@@ -1,5 +1,7 @@
 package interfacesGraficas.pruebas;
 
+import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -14,6 +16,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.border.Border;
 
 public class Ventana extends JFrame {
 	private JTextArea areaTexto;
@@ -33,8 +36,8 @@ public class Ventana extends JFrame {
 	        JScrollPane scrollPane = new JScrollPane(areaTexto);
 
 	        // Crear un botón para obtener el texto ingresado
-	        JButton botonObtenerTextoSobre = new JButton("Pasar a fichero borrando lo anterior");
-	        botonObtenerTextoSobre.addActionListener(new ActionListener() {
+	        JButton bBorrarTexto = new JButton("Pasar a fichero borrando lo anterior");
+	        bBorrarTexto.addActionListener(new ActionListener() {
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	            	mensaje = new StringBuilder("Texto pasado al fichero: ficheroUser");
@@ -42,6 +45,7 @@ public class Ventana extends JFrame {
 	                
 	                escribirFichero(textoIngresado);
 	                JOptionPane.showMessageDialog(Ventana.this, mensaje.toString());
+	                dispose();
 	            }     
 
 				private void escribirFichero(String texto) {
@@ -55,8 +59,8 @@ public class Ventana extends JFrame {
 					}	
 				}
 	        });
-	        JButton botonObtenerTextoNoSobre = new JButton("Pasar a fichero conservando lo anterior");
-	        botonObtenerTextoNoSobre.addActionListener(new ActionListener() {
+	        JButton bNoBorrarTexto = new JButton("Pasar a fichero conservando lo anterior");
+	        bNoBorrarTexto.addActionListener(new ActionListener() {
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	            	mensaje = new StringBuilder("Texto pasado al fichero: ficheroUser");
@@ -64,6 +68,7 @@ public class Ventana extends JFrame {
 	                
 	                escribirFichero(textoIngresado,true);
 	                JOptionPane.showMessageDialog(Ventana.this, mensaje.toString());
+	                dispose();
 	            }     
 
 				private void escribirFichero(String texto,boolean decision) {
@@ -79,18 +84,43 @@ public class Ventana extends JFrame {
 					}	
 				}
 	        });
+	        JButton abrirTxt = new JButton("Abrir fichero");
+	        abrirTxt.addActionListener(new ActionListener() {
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	            	try {
+                     Desktop.getDesktop().open(ficheroEscritura);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    
+	            }
+	           }
+	        });
+	        
+	        
 	        // Configurar el diseño de la ventana
-	        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+	        setLayout(null);
 	        add(scrollPane);
-	        add(botonObtenerTextoSobre);
-	        add(botonObtenerTextoNoSobre);
+	        areaTexto.setBounds(0, 0, 680, 330);
+	        areaTexto.setBackground(Color.CYAN);
+	        bNoBorrarTexto.setBounds(420, 332, 270, 30);
+	        bBorrarTexto.setBounds(0, 332, 250, 30);
+	        bNoBorrarTexto.setBackground(Color.orange);
+	        bBorrarTexto.setBackground(Color.orange);
+	        abrirTxt.setBackground(Color.orange);
+	        abrirTxt.setBounds(250, 332, 180, 30);
+	        add(areaTexto);
+	        add(bBorrarTexto);
+	        add(bNoBorrarTexto);
+	        add(abrirTxt);
 
 	        // Mostrar la ventana
 	        setLocationRelativeTo(null);
+	        setResizable(false);
 	        setVisible(true);
 	}
 	public static void main(String[] args) {
-		JOptionPane.showMessageDialog(null, "Introduzca el texto que desea pasar a ficheros");
+		//JOptionPane.showMessageDialog(null, "Introduzca el texto que desea pasar a ficheros");
 		new Ventana();
 	}
 

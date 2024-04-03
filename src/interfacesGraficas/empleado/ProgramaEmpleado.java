@@ -1,7 +1,5 @@
 package interfacesGraficas.empleado;
 
-import interfacesGraficas.radar.Tabla;
-
 public class ProgramaEmpleado {
 
 	public static void main(String[] args) {

@@ -8,7 +8,7 @@ public class EscribirEnFichero {
 
 	public static void main(String[] args) {
 
-		File fichero = new File("Ejemplo.txt");
+		File fichero = new File("ejemplosFicheros//ejemplo.txt");
 
 		int caracter = 97;
 		char caracter2 = 'B';

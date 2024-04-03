@@ -16,8 +16,8 @@ public class EscribirEnFichero4 {
 		PrintWriter pw = null;
 		
 		try {
-			fichero=new File("ficheros//coches.txt");
-			fw = new FileWriter(fichero);
+			fichero=new File("ejemplosFicheros//coches.txt");
+			fw = new FileWriter(fichero,true);
 			bw = new BufferedWriter(fw);
 			pw = new PrintWriter(bw);
 			pw.println("Audi");

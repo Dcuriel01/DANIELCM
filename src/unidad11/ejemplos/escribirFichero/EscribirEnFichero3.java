@@ -7,7 +7,7 @@ public class EscribirEnFichero3 {
 
 	public static void main(String[] args) {
 
-		try(PrintWriter escritor = new PrintWriter("Ejemplo3.txt")) {
+		try(PrintWriter escritor = new PrintWriter("ejemplosFicheros//ejemplo3.txt")) {
 			escritor.write("Otro ejemplo de escribir en ficheros con PrintWriter");
 			escritor.println();
 			escritor.printf("Podemos escrbir %s con formato","Textos");

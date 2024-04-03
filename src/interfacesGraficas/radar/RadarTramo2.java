@@ -23,6 +23,8 @@ public class RadarTramo2 extends JFrame {
     private static StringBuilder mensaje = new StringBuilder("Resultado :\n");
     private static String nombre;
     private static String apellidos;
+    
+    
 	public static void main(String[] args) {
 		nombre = JOptionPane.showInputDialog("Dime tu nombre");
 		apellidos = JOptionPane.showInputDialog("Apellidos");
@@ -30,6 +32,9 @@ public class RadarTramo2 extends JFrame {
 		JOptionPane.showMessageDialog(null, mensaje);
 		new RadarTramo2();
 	}
+	
+	
+	
 	public RadarTramo2() {
         // Configurar la ventana
         setTitle("Radares de tramo");

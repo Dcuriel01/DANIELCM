@@ -8,7 +8,7 @@ public class EscribirEnFichero2 {
 
 	public static void main(String[] args) {
 
-		String nombreFichero = "Ejemplo2.txt";
+		String nombreFichero = "ejemplosFicheros//ejemplo2.txt";
 		
 		try(BufferedWriter escritor = new BufferedWriter(new FileWriter(nombreFichero));) {
 			escritor.write("Primera línea de texto");

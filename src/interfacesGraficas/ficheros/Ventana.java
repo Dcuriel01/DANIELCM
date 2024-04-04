@@ -9,7 +9,6 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -34,7 +33,7 @@ public class Ventana extends JFrame {
 	public Ventana(){
 		 	setTitle("Paso a ficheros");
 	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	        setSize(700, 400);
+	        setSize(800, 400);
 
 	        // Crear un JTextArea
 	        areaTexto = new JTextArea();
@@ -60,7 +59,7 @@ public class Ventana extends JFrame {
 				private void escribirFichero(String texto) {
 					try(PrintWriter escritor = new PrintWriter(ficheroEscritura)) {
 						escritor.println(texto);
-						if (nombre.equals("")) {
+						if (nombre.equals("")|nombre.equals(null)) {
 							escritor.println("Escrito por: anonimo en el momento:"+fechaFormat);
 						}else {
 							escritor.println("Escrito por: " + nombre + " en el momento:"+fechaFormat);
@@ -87,7 +86,7 @@ public class Ventana extends JFrame {
 				private void escribirFichero(String texto,boolean decision) {
 					try(PrintWriter escritor = new PrintWriter(new FileWriter(ficheroEscritura,true))) {
 						escritor.println(texto);
-						if (nombre.equals("")) {
+						if (nombre.equals("")|nombre.equals(null)) {
 							escritor.println("Escrito por: anonimo en el momento:"+fechaFormat);
 						}else {
 							escritor.println("Escrito por: " + nombre + " en el momento:"+fechaFormat);
@@ -120,14 +119,13 @@ public class Ventana extends JFrame {
 	        // Configurar el diseño de la ventana
 	        setLayout(null);
 	        add(scrollPane);
-	        areaTexto.setBounds(0, 0, 680, 330);
-	        areaTexto.setBackground(Color.CYAN);
-	        bNoBorrarTexto.setBounds(420, 332, 270, 30);
-	        bBorrarTexto.setBounds(0, 332, 250, 30);
-	        bNoBorrarTexto.setBackground(Color.orange);
-	        bBorrarTexto.setBackground(Color.orange);
-	        abrirTxt.setBackground(Color.orange);
-	        abrirTxt.setBounds(250, 332, 180, 30);
+	        areaTexto.setBounds(0, 0, 800, 330);
+	        bNoBorrarTexto.setBounds(470, 332, 340, 30);
+	        bBorrarTexto.setBounds(0, 332, 290, 30);
+	        bNoBorrarTexto.setBackground(Color.GREEN);
+	        bBorrarTexto.setBackground(Color.GREEN);
+	        abrirTxt.setBackground(Color.GREEN);
+	        abrirTxt.setBounds(290, 332, 180, 30);
 	        add(areaTexto);
 	        add(bBorrarTexto);
 	        add(bNoBorrarTexto);

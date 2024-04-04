@@ -1,4 +1,4 @@
-package unidad10.ejercicios;
+package unidad10.ejercicios.empresaArticulos;
 
 public class ExcepcionArticuloNoReconocido extends Exception {
 

@@ -1,8 +1,7 @@
-package unidad10.ejercicios;
+package unidad10.ejercicios.empresaArticulos;
 
 import java.util.HashMap;
 import java.util.InputMismatchException;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class EmpresaArticulos {
@@ -18,12 +17,10 @@ public class EmpresaArticulos {
 		articulos.put(222, 1.47);
 		articulos.put(333, 2.43);
 		articulos.put(444, 5.99);
-		
-		
-		System.out.print("Introduzca el numero del artículo:");
 		do {
-			
+			salir = false;
 		try {
+			System.out.print("Introduzca el numero del artículo:");
 			nArticulo = sc.nextInt();
 			if (nArticulo<1) {
 				excepcionMenor1();
@@ -33,21 +30,6 @@ public class EmpresaArticulos {
 				excepcionMayor9999();
 				salir = true;
 			}
-			boolean salirMapa = false;
-			int contador=0;
-			for (Integer articulo : articulos.keySet()) {
-				if (nArticulo!=articulo) {
-					contador++;
-				}
-				if (contador==NUMERO_DE_ARTICULOS) {
-					salirMapa=true;
-				}else {
-					salir = true;
-				}
-			if (salirMapa) {
-				excepcionArticuloNoReconocido();
-			}
-			}
 		} catch (InputMismatchException e) {
 			System.out.println(e.getMessage());
 			System.err.println("Error tipo de variable incorrecto");
@@ -56,8 +38,6 @@ public class EmpresaArticulos {
 		} catch (ExcepcionMenorQue1 e) {
 			System.out.println(e.getMessage());
 		} catch (ExcepcionMayor9999 e) {
-			System.out.println(e.getMessage());
-		} catch (ExcepcionArticuloNoReconocido e) {
 			System.out.println(e.getMessage());
 		}
 		} while (salir);

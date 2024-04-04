@@ -1,4 +1,4 @@
-package unidad10.ejercicios;
+package unidad10.ejercicios.empresaArticulos;
 
 public class ExcepcionMenorQue1 extends Exception {
 	

@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 
-import unidad11.ejercicios.donantesConEdad.TiposSangre;
+import unidad11.ejercicios.donantesConEdad.TiposSangreConEdad;
 
 public class EmisionesPaises {
 	public static HashMap<Integer, Integer> mapaAnio = new HashMap<Integer, Integer>();

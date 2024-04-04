@@ -16,7 +16,7 @@ public class DonantesConEdad {
 		File fichero2 = new File("ficheros//resumenDonantesConEdad.txt");
 		HashMap<Integer, Edad> mapa = new HashMap<Integer, Edad>();
 		String[] datos = new String[3];
-		TiposSangre tipo;
+		TiposSangreConEdad tipo;
 		try (BufferedReader lector = new BufferedReader(new FileReader(fichero))){
 			String cadena;
 			cadena = lector.readLine();
@@ -51,32 +51,32 @@ public class DonantesConEdad {
 		
 	}
 
-	private static TiposSangre comprobarTipo(String tipo) {
-		TiposSangre tipoSangre = null;
+	private static TiposSangreConEdad comprobarTipo(String tipo) {
+		TiposSangreConEdad tipoSangre = null;
 		switch (tipo) {
 		case "AB+":
-			tipoSangre = TiposSangre.ABPOS;
+			tipoSangre = TiposSangreConEdad.ABPOS;
 			break;
 		case "AB-":
-			tipoSangre = TiposSangre.ABNEG;
+			tipoSangre = TiposSangreConEdad.ABNEG;
 			break;
 		case "A+":
-			tipoSangre = TiposSangre.APOS;
+			tipoSangre = TiposSangreConEdad.APOS;
 			break;
 		case "A-":
-			tipoSangre = TiposSangre.ANEG;
+			tipoSangre = TiposSangreConEdad.ANEG;
 			break;
 		case "B+":
-			tipoSangre = TiposSangre.BPOS;
+			tipoSangre = TiposSangreConEdad.BPOS;
 			break;
 		case "B-":
-			tipoSangre = TiposSangre.BNEG;
+			tipoSangre = TiposSangreConEdad.BNEG;
 			break;
 		case "O-":
-			tipoSangre = TiposSangre.ONEG;
+			tipoSangre = TiposSangreConEdad.ONEG;
 			break;
 		case "O+":
-			tipoSangre = TiposSangre.OPOS;
+			tipoSangre = TiposSangreConEdad.OPOS;
 			break;
 		}
 		return tipoSangre;

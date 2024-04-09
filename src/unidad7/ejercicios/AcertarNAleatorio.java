@@ -8,12 +8,13 @@ public class AcertarNAleatorio {
 	public static void main(String[] args) {
 		SecureRandom random = new SecureRandom();
 		Scanner sc = new Scanner(System.in);
-		int nBuscado = random.nextInt(100)+1;
+		final int NUMERO_MAX=200;
+		int nBuscado = random.nextInt(NUMERO_MAX)+1;
 		int nIntroducido;
-		int contador = 7;
+		int contador = 5;
 		boolean salir = false;
 		do {
-			System.out.println("Introduzca un número del 1 al 100. Tiene " + contador + " intentos para encontrarlo");
+			System.out.println("Introduzca un número del 1 al "+ NUMERO_MAX +". Tiene " + contador + " intentos para encontrarlo");
 			nIntroducido = sc.nextInt();
 			if (nIntroducido==nBuscado) {
 				System.out.println("Enhorabuena ha acertado el número buscado: " + nBuscado);

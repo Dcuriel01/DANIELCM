@@ -1,0 +1,5 @@
+Clientes
+Nombre: Ainara cif: A12345678 tipo empresa: Sociedad Anónima tipo cliente: PREFERENTEsaldo a pagar: 51.201
+
+Nombre: Dani cif: F12345678 tipo empresa: Sociedad Coperativa tipo cliente: NORMALsaldo a pagar: 98.9
+

@@ -1,0 +1,14 @@
+Nif: 000018 cantidad vendida: 7612.0
+Nif: 000009 cantidad vendida: 9429.0
+Nif: 000017 cantidad vendida: 6276.0
+Nif: 000008 cantidad vendida: 7197.0
+Nif: 000011 cantidad vendida: 6281.0
+Nif: 000006 cantidad vendida: 4197.0
+Nif: 000019 cantidad vendida: 8622.0
+Nif: 54321B cantidad vendida: 7400.0
+Nif: 43210J cantidad vendida: 4650.0
+Nif: 10987Q cantidad vendida: 5600.0
+Nif: 76543X cantidad vendida: 8200.0
+Nif: 43210AE cantidad vendida: 8900.0
+Nif: 10987AL cantidad vendida: 13200.0
+Nif: 76543AS cantidad vendida: 6300.0

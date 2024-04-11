@@ -2,7 +2,7 @@ package unidad11.ejercicios.reparaciones;
 
 public enum TipoVehiculo {
 
-	COCHE("coche"),MOTO("moto"),CAMION("camión");
+	COCHE("Coche"),MOTO("Moto"),CAMION("Camión");
 
 	private final String nombre;
 	

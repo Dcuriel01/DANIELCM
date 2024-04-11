@@ -42,7 +42,7 @@ public class Reparacion {
 	}
 	@Override
 	public String toString() {
-		return "Reparacion: tipo=" + tipo + ", matricula=" + matricula + ", anioCompra=" + anioCompra
+		return "Reparacion: tipo=" + tipo.getNombre() + ", matricula=" + matricula + ", anioCompra=" + anioCompra
 				+ ", añosReparacion=" + añosReparacion;
 	}
 	

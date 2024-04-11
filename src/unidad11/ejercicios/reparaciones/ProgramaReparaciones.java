@@ -13,7 +13,8 @@ import java.util.Properties;
 
 public class ProgramaReparaciones {
 
-	private static List<Reparacion> reparaciones = new ArrayList<Reparacion>();
+	
+	private static ArrayList<Reparacion> repar = new ArrayList<Reparacion>();
 	
 	public static void main(String[] args) {
 		try {
@@ -24,7 +25,6 @@ public class ProgramaReparaciones {
 			String nombreFichero = propiedades.getProperty("ficheroHistorial");
 			File ficheroLectura = new File("ficheros/historialReparacionesVehiculos.txt");
 			BufferedReader lector = new BufferedReader(new FileReader(directorio+File.separator+nombreFichero));
-			System.out.println("hola");
 			String cadena;
 			cadena = lector.readLine();
 			while (cadena != null) {
@@ -45,7 +45,7 @@ public class ProgramaReparaciones {
 	}
 
 	private static void mostrarDatos() {
-		Iterator it = reparaciones.iterator();
+		Iterator it = repar.iterator();
 		while (it.hasNext()) {
 			Reparacion reparacion = (Reparacion)it.next();
 			System.out.println(reparacion);
@@ -56,7 +56,7 @@ public class ProgramaReparaciones {
 	private static void tratarCadenaDatosReparacion(String cadena) {
 		
 		String[] datos = cadena.split(" ");
-		TipoVehiculo tipo = null;
+		TipoVehiculo tipo;
 		tipo = obtenerTipoVehiculo(datos[0]);
 		if (datos.length==3) {//Sin reparacion
 			crearNuevaReparacion(tipo,datos[1],datos[2],null);
@@ -78,27 +78,21 @@ public class ProgramaReparaciones {
 
 	private static void crearNuevaReparacion(TipoVehiculo tipo, String matricula, String anio, List<String> reparaciones) {
 		Reparacion reparacion = new Reparacion(tipo, matricula, anio,reparaciones);
-		reparaciones.add(reparacion);
+		repar.add(reparacion);
 	}
 
-	private static TipoVehiculo obtenerTipoVehiculo(String valor) {
+	private static TipoVehiculo obtenerTipoVehiculo(String nombreTipo) {
 		TipoVehiculo tipo = null;
-		switch (valor) {
-		case "coche":
+		if(TipoVehiculo.COCHE.getNombre().equals(nombreTipo)) {
 			tipo = TipoVehiculo.COCHE;
-			break;
-		case "moto":
-			tipo = TipoVehiculo.MOTO;
-			break;
-		case "camion":
-			tipo = TipoVehiculo.CAMION;
-			break;
-
-		default:
-			break;
 		}
-		
-		return null;
+		if(TipoVehiculo.MOTO.getNombre().equals(nombreTipo)) {
+			tipo = TipoVehiculo.MOTO;
+		}
+		if(TipoVehiculo.CAMION.getNombre().equals(nombreTipo)) {
+			tipo = TipoVehiculo.CAMION;
+		}		
+		return tipo;
 	}
 
 }

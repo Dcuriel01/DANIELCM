@@ -9,10 +9,9 @@ import java.time.format.DateTimeFormatter;
 public class Puebas{
 	public static PrintWriter escritor = null;
 	public static void main(String[]args) {
-		String fecha = "01/12/2003";
-		DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		LocalDate fechaCaducidad = LocalDate.parse(fecha,formatoFecha);
-		fechaCaducidad.format(formatoFecha);
-		System.out.println(fechaCaducidad);
+		String cadena = "Abelenda García, Laura           |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM";
+		String[] datos = cadena.split(",");
+		String[] datos2 = datos[1].split("|");
+		System.out.println(datos[0]+" "+datos2[2]);
 	}
 }

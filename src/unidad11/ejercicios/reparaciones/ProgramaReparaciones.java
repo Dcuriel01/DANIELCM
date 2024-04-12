@@ -19,7 +19,7 @@ public class ProgramaReparaciones {
 	public static void main(String[] args) {
 		try {
 			Properties propiedades = new Properties();
-			FileInputStream fis = new FileInputStream("ficheros/configuracion.properties");
+			FileInputStream fis = new FileInputStream("ficheros/properties/configuracion.properties");
 			propiedades.load(fis);
 			String directorio=propiedades.getProperty("directorio");
 			String nombreFichero = propiedades.getProperty("ficheroHistorial");

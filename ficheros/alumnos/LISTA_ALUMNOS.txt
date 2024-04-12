@@ -1,0 +1,79 @@
+Alumnado                         |Curso                                           |Grupo     
+Abelenda García, Laura           |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Almeda Martínez, Antonio         |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Álvarez Fernández, Antonio       |G.S. Desarrollo de Aplicaciones Web             |DAW
+Avilés Moreno, Carolina          |G.S. Desarrollo de Aplicaciones Web             |DAW
+Berjano Sánchez, José Antonio    |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Bracamonte Rodríguez, Gonzalo    |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Bórdalo Díaz, Esther             |G.S. Desarrollo de Aplicaciones Web             |DAW
+Caballero Nieto, Rosa            |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Caldito Gil, Manuel              |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Calle Gómez, José Ángel          |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Caraballo Martínez, Irene Cristina|G.S. Desarrollo de Aplicaciones Web             |DAW
+Carrasco García, Diego Manuel    |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Castaño Gómez, Richard           |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Chafer Sánchez, Pablo            |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Chávez Santos, Arkaitz           |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Colorado López, Víctor           |G.S. Desarrollo de Aplicaciones Web             |DAW
+Cortés Rivera, Santiago          |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Cortijo Iglesias, Noelia         |G.S. Desarrollo de Aplicaciones Web             |DAW
+Del Río Ramírez, Raúl            |G.S. Desarrollo de Aplicaciones Web             |DAW
+Del Toro Molina, Miguel Ángel    |G.S. Desarrollo de Aplicaciones Web             |DAW
+Díaz Rodríguez, María Guadalupe  |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Donoso García, Manuel Jesús      |G.S. Desarrollo de Aplicaciones Web             |DAW
+Estévez Alonso, María Ángeles    |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Fagúndez Martínez, Lucas         |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Fernández Gómez, Alfonso         |G.S. Desarrollo de Aplicaciones Web             |DAW
+Fernández Pérez, Antonio Luis    |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Fernández Romero, Ismael         |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Fernández Jiménez, José Carlos   |G.S. Desarrollo de Aplicaciones Web             |DAW
+Fernández Vázquez, Ignacio Vidal |G.S. Administración de Sistemas Informáticos en Red|ASIR
+García Gómez, Susana             |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+García Pérez, María del Carmen   |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+González Sánchez, Estíbaliz      |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+González García, Natalia         |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Guadalupe Cruz, Raúl             |G.S. Desarrollo de Aplicaciones Web             |DAW
+Hernández Fernández, David       |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Higuera Sánchez, José María      |G.S. Desarrollo de Aplicaciones Web             |DAW
+Iglesias García, Jesús María     |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Jiménez Martínez, Alberto        |G.S. Desarrollo de Aplicaciones Web             |DAW
+Lázaro Domínguez, Juan Alberto   |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+León Gutiérrez, Cristina         |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Magro Rodríguez, Roberto         |G.S. Desarrollo de Aplicaciones Web             |DAW
+Maillo Álvarez, Alicia           |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Manzanedo Fernández, Darío       |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Marcatinco Sánchez, César Antonio|G.S. Desarrollo de Aplicaciones Web             |DAW
+Martínez García, María Nazaret   |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Merideño Sánchez, Ignacio        |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Migallón Jiménez, Jorge          |G.S. Administración de Sistemas Informáticos en Red|ASIR
+Morales Torres, Jorge            |G.S. Desarrollo de Aplicaciones Web             |DAW
+Moro Gómez, Jaime                |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Naranjo Delgado, Fabián          |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Nieto López, Eliecer Antolón     |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Pajuelo Blanco, Alejandro        |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Pascual García, Miguel Ángel     |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Perea Sánchez, María de los Ángeles|G.S. Desarrollo de Aplicaciones Multiplataforma|DAM
+Piñero Rodríguez, María Rocío    |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Piris Blanco, Juan José          |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Pizarro Fernández, Juan José     |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Portillo Gómez, Alberto          |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Puertas Ramírez, David           |G.S. Desarrollo de Aplicaciones Web |DAW
+Redondo Rodríguez, José Manuel   |G.S. Desarrollo de Aplicaciones Web |DAW
+Rodríguez Sánchez, José Ignacio  |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Rodríguez Pérez, Rubén           |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Román Martínez, Gonzalo          |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Romero García, Javier            |G.S. Desarrollo de Aplicaciones Web |DAW
+Rosa Gómez, Antonio Jesús        |G.S. Desarrollo de Aplicaciones Web |DAW
+Rosado Martín, Marta             |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Ruiz Torres, Juan Pedro          |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Ruiz Torres, Ismael              |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Sánchez Delgado, Fernando Moisés |G.S. Desarrollo de Aplicaciones Web |DAW
+Sandía García, José Alberto      |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Santos Gómez, Raúl               |G.S. Desarrollo de Aplicaciones Web |DAW
+Stoyanov Todorov, Valentín       |G.S. Desarrollo de Aplicaciones Web |DAW
+Tamayo Sánchez, Carmen           |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Tena Pereira, Baltasar Paulo     |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Valadés Pacheco, José Manuel     |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM
+Valiente López, Alejandro        |G.S. Desarrollo de Aplicaciones Web |DAW
+Ventura Díaz, Óscar              |G.S. Desarrollo de Aplicaciones Web |DAW
+Vinagre Sánchez, Victoriano      |G.S. Desarrollo de Aplicaciones Multiplataforma |DAM

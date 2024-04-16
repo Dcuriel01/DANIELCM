@@ -1,0 +1,26 @@
+[
+    {
+      "name": "John",
+      "email": "john.doe@gmail.com",
+      "age": 29,
+      "phone": 5168161922,
+      "city": "NewYork",
+      "hasCreditCard": false
+    },
+    {
+      "name": "Alice",
+      "email": "alice.smith@example.com",
+      "age": 35,
+      "phone": 1234567890,
+      "city": "Los Angeles",
+      "hasCreditCard": true
+    },
+    {
+      "name": "Bob",
+      "email": "bob.jones@example.com",
+      "age": 40,
+      "phone": 9876543210,
+      "city": "Chicago",
+      "hasCreditCard": true
+    }
+  ]

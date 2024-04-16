@@ -1,0 +1,8 @@
+{
+    "name": "John",
+    "email": "john.doe@gmail.com",
+    "age": 29,
+    "phone": 5168161922,
+    "city": "NewYork",
+    "hasCreditCard": false
+  }

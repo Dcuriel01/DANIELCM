@@ -12,7 +12,7 @@ import com.google.gson.Gson;
 public class ControlRazas {
 
 	public static void main(String[] args) {
-		HashMap<String, Integer> tipos = new HashMap<String, Integer>();
+		HashMap<String, ArrayList<Raza>> zona = new HashMap<String, ArrayList<Raza>>();
 		try {
 			File fichero = new File("ficheros/json/razasComarcasExtremadura.json");
 			BufferedReader lector = new BufferedReader(new FileReader(fichero));
@@ -29,11 +29,20 @@ public class ControlRazas {
 			
 			
 			for (int i = 0; i < razas.length; i++) {
-				tipos.put(razas[i].getRaza_ganado(),tipos.getOrDefault(0,razas[i].getNumero())+razas[i].getNumero());
-				}	
-			for (String tipo : tipos.keySet()) {
-				System.out.println("Tipo: " + tipo + " cantidad: " + tipos.get(tipo));
+				if (zona.containsKey(razas[i].getZonas())) {
+					zona.get(razas[i].getZonas()).add(razas[i]);
+				}else {
+					ArrayList<Raza> lista = new ArrayList<Raza>();
+					lista.add(razas[i]);
+					zona.put(razas[i].getZonas(),zona.getOrDefault(0, lista));
+				}
 			}
+			for (String tipo : zona.keySet()) {
+				System.out.println(tipo);
+				
+				
+			}
+			
 			
 		} catch (IOException e) {
 			

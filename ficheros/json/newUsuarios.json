@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Pedro",
+    "email": "Pedro@educarex.es",
+    "age": 23,
+    "phone": 7473749,
+    "city": "Caceres",
+    "hasCreditCard": false
+  },
+  {
+    "name": "Jude",
+    "email": "Belli@educarex.es",
+    "age": 20,
+    "phone": 5555555,
+    "city": "Madrid",
+    "hasCreditCard": true
+  },
+  {
+    "name": "Vini",
+    "email": "Vini@educarex.es",
+    "age": 23,
+    "phone": 77777777,
+    "city": "Madrid",
+    "hasCreditCard": false
+  }
+]

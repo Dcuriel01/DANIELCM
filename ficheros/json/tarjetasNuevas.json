@@ -1,0 +1,25 @@
+{
+  "tarjetas": [
+    {
+      "tipo_de_tarjeta": "Visa",
+      "numero_de_tarjeta": "2341242362",
+      "numero_de_cuenta_asociada": "78234678264",
+      "titular": "Daniel Curiel",
+      "fecha_caducidad": "01/29"
+    },
+    {
+      "tipo_de_tarjeta": "American Express",
+      "numero_de_tarjeta": "347283748712",
+      "numero_de_cuenta_asociada": "12378948917",
+      "titular": "Pedro Acosta",
+      "fecha_caducidad": "10/26"
+    },
+    {
+      "tipo_de_tarjeta": "MasterCard",
+      "numero_de_tarjeta": "4782893478",
+      "numero_de_cuenta_asociada": "38472462837",
+      "titular": "Fernando Alonso",
+      "fecha_caducidad": "07/28"
+    }
+  ]
+}

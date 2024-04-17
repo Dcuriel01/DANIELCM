@@ -1,0 +1,25 @@
+{
+    "tarjetas": [
+      {
+        "tipo_de_tarjeta": "Visa",
+        "numero_de_tarjeta": "4111111111111111",
+        "numero_de_cuenta_asociada": "1234567890",
+        "titular": "Juan Pérez",
+        "fecha_caducidad": "12/24"
+      },
+      {
+        "tipo_de_tarjeta": "MasterCard",
+        "numero_de_tarjeta": "5500000000000004",
+        "numero_de_cuenta_asociada": "0987654321",
+        "titular": "Ana Gómez",
+        "fecha_caducidad": "01/26"
+      },
+      {
+        "tipo_de_tarjeta": "American Express",
+        "numero_de_tarjeta": "340000000000009",
+        "numero_de_cuenta_asociada": "1122334455",
+        "titular": "Luis Ramírez",
+        "fecha_caducidad": "06/25"
+      }
+    ]
+  }

@@ -1,4 +1,4 @@
-package unidad11.ejemplos.json.Gson;
+package unidad11.ejemplos.json.Gson.leer;
 
 public class Usuario {
 

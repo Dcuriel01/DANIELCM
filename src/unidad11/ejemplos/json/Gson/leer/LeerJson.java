@@ -1,4 +1,4 @@
-package unidad11.ejemplos.json.Gson;
+package unidad11.ejemplos.json.Gson.leer;
 
 import com.google.gson.Gson;
 
@@ -11,7 +11,6 @@ public class LeerJson {
 		Usuario usuario=gson.fromJson(json, Usuario.class);
 		
 		System.out.println(usuario);
-		
 		
 	}
 

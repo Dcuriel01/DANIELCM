@@ -29,7 +29,7 @@ public class ControlRazas {
 			
 			
 			for (int i = 0; i < razas.length; i++) {
-				tipos.put(razas[i].getRaza_ganado(),tipos.getOrDefault(0,razas[i].getNumero()));
+				tipos.put(razas[i].getRaza_ganado(),tipos.getOrDefault(0,razas[i].getNumero())+razas[i].getNumero());
 				}	
 			for (String tipo : tipos.keySet()) {
 				System.out.println("Tipo: " + tipo + " cantidad: " + tipos.get(tipo));

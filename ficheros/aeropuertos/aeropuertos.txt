@@ -1,0 +1,3 @@
+Pais: Spain
+id=231, codigo=HKG, nombre: Hong Kong International Airport, codigoGPS: VHHH, pais: Spain
+id=473, codigo=UAH, nombre: Ua Huka Airport, codigoGPS: NTMU, pais: Spain

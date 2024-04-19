@@ -29,7 +29,6 @@ public class AplicacionAeropuerto {
 			try {
 				ficheroEscritura.createNewFile();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -42,10 +41,9 @@ public class AplicacionAeropuerto {
 			}
 			System.out.println("Datos escritos con exito");
 		}catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		
@@ -77,10 +75,8 @@ public class AplicacionAeropuerto {
 		Gson gson = new Gson();
 		aereo = gson.fromJson(contenido.toString(), Aeropuertos[].class);
 		}catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return aereo;

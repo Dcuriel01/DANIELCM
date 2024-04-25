@@ -2,9 +2,10 @@ package unidad12.ejemplos.conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class ObtenerConexion {
+public class EliminarDatos {
 
 	public static void main(String[] args) {
 
@@ -14,7 +15,11 @@ public class ObtenerConexion {
 		
 		try(Connection con = DriverManager.getConnection(url,usuario,password)) {
 			
-			System.out.println(con);
+			String sql = "DELETE FROM personas WHERE id=?";
+			PreparedStatement sentenciaPreparada = con.prepareStatement(sql);
+			sentenciaPreparada.setInt(1, 11);
+			int filasEliminadas=sentenciaPreparada.executeUpdate();
+			System.out.println("Filas eliminadas = " + filasEliminadas);
 			
 			
 			

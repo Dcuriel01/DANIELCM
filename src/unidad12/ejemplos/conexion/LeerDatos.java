@@ -10,9 +10,9 @@ public class LeerDatos {
 
 	public static void main(String[] args) {
 
-		String url = "jdbc:mysql://localhost:3306/empresa";
-		String usuario = "root";
-		String password = "admin.1234";
+		String url = "jdbc:mysql://192.168.0.101:3306/CurielMora";
+		String usuario = "CurielMora"; 
+		String password = "Curi"; 
 		
 		String ciudad = "Madrid";//Esto lo recibimos por consola o algo parecido
 		

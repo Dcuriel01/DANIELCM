@@ -9,7 +9,7 @@ public class EliminarDatos {
 
 	public static void main(String[] args) {
 
-		String url = "jdbc:mysql://192.168.0.101:3306/CurielMora";
+		String url = "jdbc:mysql://192.168.0.102:3306/CurielMora";
 		String usuario = "CurielMora"; 
 		String password = "Curi"; 
 		

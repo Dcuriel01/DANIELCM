@@ -1,26 +1,32 @@
 package unidad12.ejemplos.conexion;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.Properties;
 
 public class LeerDatosPS {
 
+	static Properties propiedades = new Properties();
+	
+	
 	public static void main(String[] args) {
 
-		String url = "jdbc:mysql://192.168.0.101:3306/CurielMora";
-		String usuario = "CurielMora"; 
-		String password = "Curi"; 
-		String ciudad = "Madrid";//Esto lo recibimos por consola o algo parecido
+		cargarConfiguracion();
+		String url = propiedades.getProperty("url_clase");
+		String usuario = propiedades.getProperty("usuario");
+		String password = propiedades.getProperty("password");
 		
 		try(Connection con = DriverManager.getConnection(url,usuario,password)) {
 			
-			String sql = "SELECT * FROM personas WHERE ciudad=?";
+			String sql = "SELECT * FROM personas WHERE id=?";
 			PreparedStatement sentenciaPreparada = con.prepareStatement(sql);
-			sentenciaPreparada.setString(1, ciudad);
+			sentenciaPreparada.setInt(1, 6);
 			ResultSet resultado = sentenciaPreparada.executeQuery();
 			System.out.println("Nombre  Ciudad");
 			while (resultado.next()) {
@@ -36,9 +42,19 @@ public class LeerDatosPS {
 			
 		
 		}
-		
-		
-		
+			
+	}
+	
+	public static void cargarConfiguracion(){
+		FileInputStream fis;
+		try {
+			fis = new FileInputStream("ficheros/properties/bd/conexion.properties");
+			propiedades.load(fis);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

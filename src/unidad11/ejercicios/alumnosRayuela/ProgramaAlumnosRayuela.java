@@ -11,14 +11,43 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Properties;
 
-import unidad11.ejercicios.reparaciones.Reparacion;
-
 public class ProgramaAlumnosRayuela {
 
 	private static ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 	
 	public static void main(String[] args) {
+		
+		leerFichero();
+		escribirFichero();
+		
+	}
 
+	private static void escribirFichero() {
+		try {
+			Properties propiedades = new Properties();
+			FileInputStream fis = new FileInputStream("ficheros/properties/configuracionAlumnos.properties");
+			propiedades.load(fis);
+			String directorio=propiedades.getProperty("directorio");
+			String nombreFichero = propiedades.getProperty("ficheroEscritura");
+			PrintWriter escritor = new PrintWriter(directorio+File.separator+nombreFichero);
+			Iterator it = alumnos.iterator();
+			while (it.hasNext()) {
+				Alumno alumno = (Alumno)it.next();
+				escritor.println("INSERT INTO(id,nombre,apellidos,ciclo formativo"
+						+ " values("+alumno.getId()+","+alumno.getApellidos()+","+alumno.getNombre()+","+alumno.getCodigoCiclo()+")");
+			}
+			
+			escritor.close();
+			System.out.println("Datos escritos con exito");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	private static void leerFichero() {
 		try {
 			Properties propiedades = new Properties();
 			FileInputStream fis = new FileInputStream("ficheros/properties/configuracionAlumnos.properties");
@@ -43,30 +72,6 @@ public class ProgramaAlumnosRayuela {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		try {
-			Properties propiedades = new Properties();
-			FileInputStream fis = new FileInputStream("ficheros/properties/configuracionAlumnos.properties");
-			propiedades.load(fis);
-			String directorio=propiedades.getProperty("directorio");
-			String nombreFichero = propiedades.getProperty("ficheroEscritura");
-			PrintWriter escritor = new PrintWriter(directorio+File.separator+nombreFichero);
-			Iterator it = alumnos.iterator();
-			while (it.hasNext()) {
-				Alumno alumno = (Alumno)it.next();
-				escritor.println("INSERT INTO(id,nombre,apellidos,ciclo formativo"
-						+ " values("+alumno.getId()+","+alumno.getApellidos()+","+alumno.getNombre()+","+alumno.getCodigoCiclo()+")");
-			}
-			
-			escritor.close();
-			System.out.println("Datos escritos con exito");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		
 	}
 
 	private static void tratarCadena(String cadena,int id) {

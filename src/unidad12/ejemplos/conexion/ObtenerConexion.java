@@ -4,13 +4,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import unidad12.ConexionBD;
+
 public class ObtenerConexion {
 
 	public static void main(String[] args) {
 
-		String url = "jdbc:mysql://192.168.0.102:3306/CurielMora";
-		String usuario = "CurielMora"; 
-		String password = "Curi"; 
+		String url = ConexionBD.obtenerURLClase();
+		String usuario = ConexionBD.obtenerUsuario();
+		String password = ConexionBD.obtenerContraseña(); 
 		
 		try(Connection con = DriverManager.getConnection(url,usuario,password)) {
 			

@@ -14,12 +14,12 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 
 public class VentanaPrincipal extends JFrame {
-	 static int contadorCarreras = 0;
-	 static Button bGenerar =  new Button("Simular carrera"); 
-	 static boolean posibilidadGeneracion = true;
-	 private JList listaNombres; // Lista de personas
-	 private DefaultListModel modelo; // Objeto que modela la lista
-	 private JScrollPane scrollLista; // Barra de desplazamiento vertical
+	static int contadorCarreras=0;
+	static Button bGenerar =  new Button("Simular carrera"); 
+	static boolean posibilidadGeneracion = true;
+	private JList listaNombres; // Lista de personas
+	private DefaultListModel modelo; // Objeto que modela la lista
+	private JScrollPane scrollLista; // Barra de desplazamiento vertical
 
 	public static void main(String[] args) {
 		TablaPilotos.inicializarTabla();
@@ -42,6 +42,8 @@ public class VentanaPrincipal extends JFrame {
 	        setLocationRelativeTo(null);
 	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        //pack();
+	        bGenerar.setSize(300,200);
+	        bTabla.setSize(300,200);
 	        setVisible(true);
 	        setSize(600,400);
 	}
@@ -144,11 +146,11 @@ public class VentanaPrincipal extends JFrame {
 			piloto.setPtsEnCarrera(0);
 			piloto.setnGeneradores();
 			if (piloto.getnGeneradores()==3) {
-				pts = generarRandom(10,10,8);
+				pts = generarRandom(100,20,10);
 			}else if (piloto.getnGeneradores()==2) {
-				pts = generarRandom(10, 5, 1);
+				pts = generarRandom(100, 20, 1);
 			}else {
-				pts = generarRandom(10, 1, 1);
+				pts = generarRandom(100, 1, 1);
 			}
 			piloto.setPtsEnCarrera(pts);
 		}

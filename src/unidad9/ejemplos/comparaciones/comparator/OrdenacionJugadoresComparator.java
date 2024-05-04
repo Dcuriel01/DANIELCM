@@ -27,6 +27,10 @@ public class OrdenacionJugadoresComparator {
 		ComparatorEdad comparadorEdad = new ComparatorEdad();
 		Collections.sort(equipo,comparadorEdad);
 		System.out.println(equipo);
+		for (Jugador jugador : equipo) {
+			System.out.println(jugador.getEdad());
+			
+		}
 		
 		
 	}

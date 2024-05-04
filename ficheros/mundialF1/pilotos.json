@@ -1,0 +1,145 @@
+{
+    "pilotos_f1": [
+      {
+        "nombre": "Lewis",
+        "apellidos": "Hamilton",
+        "abreviatura": "HAM",
+        "equipo": "Mercedes",
+        "pais_nacimiento": "Reino Unido"
+      },
+      {
+        "nombre": "Max",
+        "apellidos": "Verstappen",
+        "abreviatura": "VER",
+        "equipo": "Red Bull Racing",
+        "pais_nacimiento": "Países Bajos"
+      },
+      {
+        "nombre": "Valtteri",
+        "apellidos": "Bottas",
+        "abreviatura": "BOT",
+        "equipo": "Mercedes",
+        "pais_nacimiento": "Finlandia"
+      },
+      {
+        "nombre": "Charles",
+        "apellidos": "Leclerc",
+        "abreviatura": "LEC",
+        "equipo": "Ferrari",
+        "pais_nacimiento": "Mónaco"
+      },
+      {
+        "nombre": "Sebastian",
+        "apellidos": "Vettel",
+        "abreviatura": "VET",
+        "equipo": "Aston Martin",
+        "pais_nacimiento": "Alemania"
+      },
+      {
+        "nombre": "Daniel",
+        "apellidos": "Ricciardo",
+        "abreviatura": "RIC",
+        "equipo": "McLaren",
+        "pais_nacimiento": "Australia"
+      },
+      {
+        "nombre": "Lando",
+        "apellidos": "Norris",
+        "abreviatura": "NOR",
+        "equipo": "McLaren",
+        "pais_nacimiento": "Reino Unido"
+      },
+      {
+        "nombre": "Carlos",
+        "apellidos": "Sainz",
+        "abreviatura": "SAI",
+        "equipo": "Ferrari",
+        "pais_nacimiento": "España"
+      },
+      {
+        "nombre": "Fernando",
+        "apellidos": "Alonso",
+        "abreviatura": "ALO",
+        "equipo": "Alpine",
+        "pais_nacimiento": "España"
+      },
+      {
+        "nombre": "Sergio",
+        "apellidos": "Perez",
+        "abreviatura": "PER",
+        "equipo": "Red Bull Racing",
+        "pais_nacimiento": "México"
+      },
+      {
+        "nombre": "Pierre",
+        "apellidos": "Gasly",
+        "abreviatura": "GAS",
+        "equipo": "AlphaTauri",
+        "pais_nacimiento": "Francia"
+      },
+      {
+        "nombre": "Esteban",
+        "apellidos": "Ocon",
+        "abreviatura": "OCO",
+        "equipo": "Alpine",
+        "pais_nacimiento": "Francia"
+      },
+      {
+        "nombre": "Kimi",
+        "apellidos": "Räikkönen",
+        "abreviatura": "RAI",
+        "equipo": "Alfa Romeo Racing",
+        "pais_nacimiento": "Finlandia"
+      },
+      {
+        "nombre": "Antonio",
+        "apellidos": "Giovinazzi",
+        "abreviatura": "GIO",
+        "equipo": "Alfa Romeo Racing",
+        "pais_nacimiento": "Italia"
+      },
+      {
+        "nombre": "Mick",
+        "apellidos": "Schumacher",
+        "abreviatura": "MSC",
+        "equipo": "Haas F1 Team",
+        "pais_nacimiento": "Alemania"
+      },
+      {
+        "nombre": "Nikita",
+        "apellidos": "Mazepin",
+        "abreviatura": "MAZ",
+        "equipo": "Haas F1 Team",
+        "pais_nacimiento": "Rusia"
+      },
+      {
+        "nombre": "Nicholas",
+        "apellidos": "Latifi",
+        "abreviatura": "LAT",
+        "equipo": "Williams Racing",
+        "pais_nacimiento": "Canadá"
+      },
+      {
+        "nombre": "George",
+        "apellidos": "Russell",
+        "abreviatura": "RUS",
+        "equipo": "Williams Racing",
+        "pais_nacimiento": "Reino Unido"
+      },
+      {
+        "nombre": "Lance",
+        "apellidos": "Stroll",
+        "abreviatura": "STR",
+        "equipo": "Aston Martin",
+        "pais_nacimiento": "Canadá"
+      },
+      {
+        "nombre": "Yuki",
+        "apellidos": "Tsunoda",
+        "abreviatura": "TSU",
+        "equipo": "AlphaTauri",
+        "pais_nacimiento": "Japón"
+      }
+    ]
+  }
+  

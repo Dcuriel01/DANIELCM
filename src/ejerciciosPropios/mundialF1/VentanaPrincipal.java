@@ -146,11 +146,11 @@ public class VentanaPrincipal extends JFrame {
 			piloto.setPtsEnCarrera(0);
 			piloto.setnGeneradores();
 			if (piloto.getnGeneradores()==3) {
-				pts = generarRandom(100,20,10);
+				pts = generarRandom(10,8,5);
 			}else if (piloto.getnGeneradores()==2) {
-				pts = generarRandom(100, 20, 1);
+				pts = generarRandom(10, 5, 1);
 			}else {
-				pts = generarRandom(100, 1, 1);
+				pts = generarRandom(10, 1, 1);
 			}
 			piloto.setPtsEnCarrera(pts);
 		}

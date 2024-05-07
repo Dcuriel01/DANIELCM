@@ -16,6 +16,7 @@ import javax.swing.JScrollPane;
 public class VentanaPrincipal extends JFrame {
 	static int contadorCarreras=0;
 	static Button bGenerar =  new Button("Simular carrera"); 
+	static Button bGenerarMun =  new Button("Generar mundial"); 
 	static boolean posibilidadGeneracion = true;
 	private JList listaNombres; // Lista de personas
 	private DefaultListModel modelo; // Objeto que modela la lista
@@ -36,8 +37,11 @@ public class VentanaPrincipal extends JFrame {
 	        
 	        add(bGenerar);
 	        
+	        add(bGenerarMun);
+	        
 	        bTabla.addActionListener(e -> TablaPilotos.crearTabla()); // Una forma mucho más rápida de gestionar los eventos
 	        bGenerar.addActionListener(e -> simular());
+	        bGenerarMun.addActionListener(e -> simularMundial());
 	        
 	        setLocationRelativeTo(null);
 	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -48,6 +52,14 @@ public class VentanaPrincipal extends JFrame {
 	        setSize(600,400);
 	}
 
+
+	private void simularMundial() {
+		for (int i = 0; i < 5; i++) {
+			simular();
+		}
+		bGenerarMun.disable();
+		
+	}
 
 	private void simular() {
 		ArrayList<Piloto> pilotos = TablaPilotos.getListaPilotos();
@@ -88,6 +100,7 @@ public class VentanaPrincipal extends JFrame {
 			}
 			JOptionPane.showMessageDialog(this, "Campeonato:\n"+mensaje);
 			bGenerar.disable();
+			bGenerarMun.disable();
 		}
 		
 		

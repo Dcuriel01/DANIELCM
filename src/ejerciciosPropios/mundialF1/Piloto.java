@@ -10,6 +10,7 @@ public class Piloto {
 	private int pts;
 	private int nGeneradores; 
 	private int ptsEnCarrera;
+
 	
 	public Piloto(String nombre, String apellidos, String abreviatura, String equipo, String pais_nacimiento) {
 		super();
@@ -21,6 +22,7 @@ public class Piloto {
 		pts = 0;
 		ptsEnCarrera =0;
 		nGeneradores =0;
+		
 	}
 	public String getNombre() {
 		return nombre;
@@ -69,7 +71,7 @@ public class Piloto {
 		this.ptsEnCarrera = ptsEnCarrera;
 	}
 	public void setnGeneradores() {
-		if (equipo.equals("Red Bull Racing")) {
+		if (equipo.equals("Red Bull Racing")|nombre.equals("Fernando")) {
 			nGeneradores=3;
 		}else if (equipo.equals("Mercedes")|equipo.equals("Ferrari")|equipo.equals("McLaren")) {
 			nGeneradores=2;
@@ -78,7 +80,7 @@ public class Piloto {
 		}
 	}
 	
-	
+
 	
 	
 	

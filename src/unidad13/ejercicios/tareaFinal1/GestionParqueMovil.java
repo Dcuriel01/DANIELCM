@@ -83,10 +83,15 @@ public class GestionParqueMovil {
 	}
 	
 	public  void mostrarListadoVehiculos() {
-		System.out.println("Listado de vehiculos");
-		for (Vehiculo vehiculo : listaVehiculos) {
-			System.out.println(vehiculo);
+		if (!listaVehiculos.isEmpty()) {
+			System.out.println("Listado de vehiculos");
+			for (Vehiculo vehiculo : listaVehiculos) {
+				System.out.println(vehiculo);
+			}
+		}else {
+			System.out.println("La lista esta vacia");
 		}
+		
 	}
 	public void setListaVehiculos(ArrayList<Vehiculo> listaVehiculos) {
 		this.listaVehiculos = listaVehiculos;

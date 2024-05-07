@@ -4,6 +4,7 @@ package unidad13.ejercicios.tareaFinal1;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -13,7 +14,10 @@ public class TareaFinal1Programa {
 	public static void main(String[] args) {
 		GestionParqueMovil parqueM = new GestionParqueMovil();
 		BaseDatos.crearTabla();
-		parqueM.setListaVehiculos(BaseDatos.recuperarLista()); 
+		ArrayList<Vehiculo>listaVehiculos = BaseDatos.recuperarLista();
+		if (!listaVehiculos.isEmpty()) {
+			parqueM.setListaVehiculos(listaVehiculos); 
+		}
 		
 		Vehiculo vehiculo = null;
 		int opcion = 0;

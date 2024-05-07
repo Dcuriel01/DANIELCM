@@ -9,22 +9,29 @@ public class VentanaPrincipal extends JFrame {
 	
     public VentanaPrincipal() {
         super("Parque Movil");
+        Gestion.recuperarLista();
         setLayout(new FlowLayout());
         Button bAlta =  new Button("Dar de alta"); 
-        Button bTabla =  new Button("Mostrar tabla de los coches"); 
-        Button bActualizar =  new Button("Actualizar base de datos"); 
+        Button bTabla =  new Button("Mostrar tabla de los coches");
+        Button bBaja =  new Button("Dar de baja"); 
+        Button bKm =  new Button("Actualizar kilometraje"); 
+        Button bInf =  new Button("Informacion de un coche"); 
         add(bAlta);
         add(bTabla);
-        add(bActualizar);
+        add(bBaja);
+        add(bKm);
+        add(bInf);
         
         bAlta.addActionListener(e -> DarAlta.main(null)); // Una forma mucho más rápida de gestionar los eventos
         
         bTabla.addActionListener(e -> CrearTabla.main(null)); // Una forma mucho más rápida de gestionar los eventos
         
-        bActualizar.addActionListener(e -> TareaFinal1Programa.actualizarBD()); // Una forma mucho más rápida de gestionar los eventos
+        bBaja.addActionListener(e -> DarBaja.main(null)); // Una forma mucho más rápida de gestionar los eventos
         
-        bAlta.setSize(100,100);
-        bTabla.setSize(100,100);
+        bKm.addActionListener(e -> CambiarKm.main(null)); // Una forma mucho más rápida de gestionar los eventos
+        
+        bInf.addActionListener(e -> BuscarInformacion.main(null)); // Una forma mucho más rápida de gestionar los eventos
+        
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);

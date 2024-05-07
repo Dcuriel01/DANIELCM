@@ -63,7 +63,7 @@ public class GestionParqueMovil {
 				v.setKilometraje(kilometraje);
 			}
 		}else {
-			JOptionPane.showMessageDialog(null, "Cocche no encontrado");
+			JOptionPane.showMessageDialog(null, "Coche no encontrado");
 		}
 	}
 	

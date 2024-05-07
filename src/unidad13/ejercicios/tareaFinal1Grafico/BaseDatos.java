@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import unidad12.ConexionBD;
 
 public class BaseDatos {
-	static String url = ConexionBD.obtenerURLClase();
+	static String url = ConexionBD.obtenerURLCasa();
 	static String usuario = ConexionBD.obtenerUsuario();
 	static String password = ConexionBD.obtenerContraseña();
 	public static void crearTabla() {

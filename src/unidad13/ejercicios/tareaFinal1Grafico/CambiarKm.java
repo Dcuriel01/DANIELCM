@@ -8,29 +8,17 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-public class DarAlta extends JFrame {
+public class CambiarKm extends JFrame {
 	
 	 private JTextField matricula;
-	 private JTextField marca;
-	 private JTextField modelo;
-	 private JTextField fecha;
 	 private JTextField kilometraje;
-	
-    public DarAlta() {
-        super("Dar de alta");
+	 
+    public CambiarKm() {
+        super("Parque Movil");
         setLayout(new FlowLayout());
         add(new JLabel("Matricula:"));
         matricula =new JTextField(10); 
         add(matricula);
-        add(new JLabel("Marca:"));
-        marca =new JTextField(20); 
-        add(marca);
-        add(new JLabel("Modelo:"));
-        modelo =new JTextField(10); 
-        add(modelo);
-        add(new JLabel("Fecha(dd/MM/yy):"));
-        fecha =new JTextField(10); 
-        add(fecha);
         add(new JLabel("Kilometraje:"));
         kilometraje =new JTextField(10); 
         add(kilometraje);
@@ -47,25 +35,23 @@ public class DarAlta extends JFrame {
     }
 
     public static void main(String[] args) {
-        new DarAlta();
+        new CambiarKm();
     }
     
     
     private void leerDatosFormulario() {
     	
     	String matriculaS = matricula.getText();
-        String marcaS = marca.getText();
-        String modeloS = modelo.getText();
-        String fechaTemp = fecha.getText();
-        int kilometrajeS =Integer.parseInt(kilometraje.getText());
-        Vehiculo v = Gestion.crearVehiculo(matriculaS, fechaTemp, marcaS, modeloS, kilometrajeS);
-        
-        if (v!=null) {
-			Gestion.darAlta(v);
-			Gestion.actualizarBD();
-			JOptionPane.showMessageDialog(this, "Coche dado de alta");
-			dispose();
-		}
+    	int kilometrajeS = Integer.parseInt(kilometraje.getText());
+        	if (Gestion.validadarMatricula(matriculaS)) {
+        		Gestion.cambiarKm(matriculaS, kilometrajeS);
+    			Gestion.actualizarBD();
+    			JOptionPane.showMessageDialog(this, "Kilometraje cambiado correctamente");
+    			dispose();
+			}else {
+				JOptionPane.showMessageDialog(this, "Matricula mal escrita");
+			}
+			
         
         
         

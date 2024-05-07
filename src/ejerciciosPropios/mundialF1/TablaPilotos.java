@@ -3,7 +3,7 @@ package ejerciciosPropios.mundialF1;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import unidad12.salidaEntrada.Tabla;
+import unidad13.ejemplos.menu.Tabla;
 
 public class TablaPilotos {
 	static ArrayList<Piloto> listaPilotos = null;

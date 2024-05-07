@@ -1,4 +1,4 @@
-package unidad12.salidaEntrada;
+package unidad13.ejemplos.menu;
 
 import java.sql.SQLException;
 import javax.sql.rowset.JdbcRowSet;
@@ -21,7 +21,7 @@ public class CrearTabla {
 	}
 
 	public static String[][] recuperarListadoPersonas() {
-		String url = ConexionBD.obtenerURLClase();
+		String url = ConexionBD.obtenerURLCasa();
 		String usuario = ConexionBD.obtenerUsuario();
 		String password = ConexionBD.obtenerContraseña();
 		String[][] datos = null;

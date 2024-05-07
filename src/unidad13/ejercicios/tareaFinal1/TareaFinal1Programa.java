@@ -76,6 +76,9 @@ public class TareaFinal1Programa {
 			BaseDatos.renovarLista(parqueM.getListaVehiculos());
 			System.out.println("Base de datos actualizada");
 			break;
+		case 7:
+			System.out.println("Saliendo");
+			break;
 		default:
 			System.out.println("instrucción no reconocida");
 			break;

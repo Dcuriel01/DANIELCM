@@ -1,4 +1,4 @@
-package unidad13.ejercicios.tareaFinal1Grafico;
+package unidad13.ejercicios.gestionParqueMovilGrafico;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import unidad12.ConexionBD;
 
 public class BaseDatos {
-	static String url = ConexionBD.obtenerURLCasa();
+	static String url = ConexionBD.obtenerURLClase();
 	static String usuario = ConexionBD.obtenerUsuario();
 	static String password = ConexionBD.obtenerContraseña();
 	public static void crearTabla() {

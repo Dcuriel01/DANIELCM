@@ -1,4 +1,4 @@
-package unidad13.ejercicios.tareaFinal1Grafico;
+package unidad13.ejercicios.gestionParqueMovilGrafico;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
@@ -8,12 +8,12 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-public class DarBaja extends JFrame {
+public class BuscarInformacion extends JFrame {
 	
 	 private JTextField matricula;
 
-    public DarBaja() {
-        super("Dar de baja");
+    public BuscarInformacion() {
+        super("Información de un coche");
         setLayout(new FlowLayout());
         add(new JLabel("Matricula:"));
         matricula =new JTextField(10); 
@@ -31,7 +31,7 @@ public class DarBaja extends JFrame {
     }
 
     public static void main(String[] args) {
-        new DarBaja();
+        new BuscarInformacion();
     }
     
     
@@ -39,7 +39,7 @@ public class DarBaja extends JFrame {
     	
     	String matriculaS = matricula.getText();
         	if (Gestion.validadarMatricula(matriculaS)) {
-        		Gestion.darBaja(matriculaS);
+        		Gestion.buscarCoche(matriculaS);
     			Gestion.actualizarBD();
     			dispose();
 			}else {

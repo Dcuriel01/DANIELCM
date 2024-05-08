@@ -1,8 +1,6 @@
-package unidad13.ejercicios.tareaFinal1Grafico;
+package unidad13.ejercicios.gestionPaqueMovil;
 
 import java.util.ArrayList;
-
-import javax.swing.JOptionPane;
 
 public class GestionParqueMovil {
 	
@@ -21,10 +19,10 @@ public class GestionParqueMovil {
 			}
 		}
 		if (encontrado) {
-			JOptionPane.showMessageDialog(null, "Esa matrícula ya esta almacenada");
+			System.out.println("Esa matrícula ya esta almacenada");
 		}else {
 			listaVehiculos.add(vehiculo);
-			JOptionPane.showMessageDialog(null, "Vehiculo añadido correctamente");
+			System.out.println("Vehiculo añadido correctamente");
 		}
 	}
 	public  void darBajaVehiculo(String matricula) {
@@ -39,9 +37,9 @@ public class GestionParqueMovil {
 		}
 		if (encontrado) {
 			listaVehiculos.remove(v);
-			JOptionPane.showMessageDialog(null, "Vehiculo dado de baja correctamente");
+			System.out.println("Vehiculo dado de baja correctamente");
 		}else {
-			JOptionPane.showMessageDialog(null, "Ese vehiculo no esta registrado");
+			System.out.println("Ese vehiculo no esta registrado");
 		}
 		
 	}
@@ -58,12 +56,12 @@ public class GestionParqueMovil {
 		}
 		if (encontrado) {
 			if (kilometraje<v.getKilometraje()) {
-				JOptionPane.showMessageDialog(null, "El kilometraje no puede pasar a ser menor");
+				System.out.println("El kilometraje no puede pasar a ser menor");
 			}else {
 				v.setKilometraje(kilometraje);
 			}
 		}else {
-			JOptionPane.showMessageDialog(null, "Coche no encontrado");
+			System.out.println("Cocche no encontrado");
 		}
 	}
 	
@@ -78,9 +76,9 @@ public class GestionParqueMovil {
 			}
 		}
 		if (encontrado) {
-			JOptionPane.showMessageDialog(null, v);
+			System.out.println(v);
 		}else {
-			JOptionPane.showMessageDialog(null, "Coche no encontrado");
+			System.out.println("Coche no encontrado");
 		}
 	}
 	

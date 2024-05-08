@@ -22,6 +22,7 @@ public class GestionParqueMovil {
 			System.out.println("Esa matrícula ya esta almacenada");
 		}else {
 			listaVehiculos.add(vehiculo);
+			BaseDatos.añadirVehiculo(vehiculo);
 			System.out.println("Vehiculo añadido correctamente");
 		}
 	}
@@ -37,6 +38,7 @@ public class GestionParqueMovil {
 		}
 		if (encontrado) {
 			listaVehiculos.remove(v);
+			BaseDatos.eliminarElemento(matricula);
 			System.out.println("Vehiculo dado de baja correctamente");
 		}else {
 			System.out.println("Ese vehiculo no esta registrado");
@@ -59,9 +61,10 @@ public class GestionParqueMovil {
 				System.out.println("El kilometraje no puede pasar a ser menor");
 			}else {
 				v.setKilometraje(kilometraje);
+				BaseDatos.actualizarKilometraje(matricula, kilometraje);
 			}
 		}else {
-			System.out.println("Cocche no encontrado");
+			System.out.println("Coche no encontrado");
 		}
 	}
 	

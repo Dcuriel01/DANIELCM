@@ -1,13 +1,7 @@
 package unidad13.ejercicios.gestionParqueMovilGrafico;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 
-import javax.sql.rowset.JdbcRowSet;
-import javax.sql.rowset.RowSetFactory;
-import javax.sql.rowset.RowSetProvider;
-
-import unidad12.ConexionBD;
 
 
 public class CrearTabla {

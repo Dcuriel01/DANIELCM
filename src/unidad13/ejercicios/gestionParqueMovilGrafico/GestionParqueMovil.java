@@ -24,6 +24,7 @@ public class GestionParqueMovil {
 			JOptionPane.showMessageDialog(null, "Esa matrícula ya esta almacenada");
 		}else {
 			listaVehiculos.add(vehiculo);
+			BaseDatos.añadirVehiculo(vehiculo);
 			JOptionPane.showMessageDialog(null, "Vehiculo añadido correctamente");
 		}
 	}
@@ -39,6 +40,7 @@ public class GestionParqueMovil {
 		}
 		if (encontrado) {
 			listaVehiculos.remove(v);
+			BaseDatos.eliminarElemento(matricula);
 			JOptionPane.showMessageDialog(null, "Vehiculo dado de baja correctamente");
 		}else {
 			JOptionPane.showMessageDialog(null, "Ese vehiculo no esta registrado");
@@ -61,6 +63,7 @@ public class GestionParqueMovil {
 				JOptionPane.showMessageDialog(null, "El kilometraje no puede pasar a ser menor");
 			}else {
 				v.setKilometraje(kilometraje);
+				BaseDatos.actualizarKilometraje(matricula, kilometraje);
 			}
 		}else {
 			JOptionPane.showMessageDialog(null, "Coche no encontrado");
@@ -82,18 +85,6 @@ public class GestionParqueMovil {
 		}else {
 			JOptionPane.showMessageDialog(null, "Coche no encontrado");
 		}
-	}
-	
-	public  void mostrarListadoVehiculos() {
-		if (!listaVehiculos.isEmpty()) {
-			System.out.println("Listado de vehiculos");
-			for (Vehiculo vehiculo : listaVehiculos) {
-				System.out.println(vehiculo);
-			}
-		}else {
-			System.out.println("La lista esta vacia");
-		}
-		
 	}
 	public void setListaVehiculos(ArrayList<Vehiculo> listaVehiculos) {
 		this.listaVehiculos = listaVehiculos;

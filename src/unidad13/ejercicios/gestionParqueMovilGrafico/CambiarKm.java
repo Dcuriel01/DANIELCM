@@ -45,7 +45,6 @@ public class CambiarKm extends JFrame {
     	int kilometrajeS = Integer.parseInt(kilometraje.getText());
         	if (Gestion.validadarMatricula(matriculaS)) {
         		Gestion.cambiarKm(matriculaS, kilometrajeS);
-    			Gestion.actualizarBD();
     			JOptionPane.showMessageDialog(this, "Kilometraje cambiado correctamente");
     			dispose();
 			}else {

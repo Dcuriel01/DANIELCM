@@ -53,7 +53,6 @@ public class BaseDatos {
 	}
 	
 	public static void renovarLista(ArrayList<Vehiculo>listaVehiculos) {
-		borrarContenidoTabla();
 		try(Connection con = DriverManager.getConnection(url,usuario,password)){
 			String sql = "INSERT INTO parqueMovil(matricula,fechaMatriculacion,marca,modelo,kilometraje)"
 					+ "VALUE(?,?,?,?,?)";
@@ -79,13 +78,45 @@ public class BaseDatos {
 		fecha = LocalDate.parse(fechaProv, formatoFecha2);
 		return fecha;
 	}
-	 private static void borrarContenidoTabla() {
+	 public static void eliminarElemento(String matricula) {
 			try(Connection con = DriverManager.getConnection(url,usuario,password)){
-				String sql = "DELETE FROM parqueMovil";
+				String sql = "DELETE FROM parqueMovil where matricula = ?";
 				PreparedStatement sentenciaPreparada = con.prepareStatement(sql);
+				sentenciaPreparada.setString(1, matricula);
 				sentenciaPreparada.executeUpdate();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
 	 }
+	 public static void añadirVehiculo(Vehiculo vehiculo) {
+			try(Connection con = DriverManager.getConnection(url,usuario,password)){
+				String sql = "INSERT INTO parqueMovil(matricula,fechaMatriculacion,marca,modelo,kilometraje)"
+						+ "VALUE(?,?,?,?,?)";
+				PreparedStatement sentenciaPreparada = con.prepareStatement(sql);
+				sentenciaPreparada.setString(1, vehiculo.getMatricula());
+				sentenciaPreparada.setString(2, String.valueOf(vehiculo.getFechaMatriculacion()));
+				sentenciaPreparada.setString(3, vehiculo.getMarca());
+				sentenciaPreparada.setString(4, vehiculo.getModelo());
+				sentenciaPreparada.setInt(5, vehiculo.getKilometraje());
+				sentenciaPreparada.executeUpdate();
+
+				
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+	}
+	 public static void actualizarKilometraje(String matricula,int kilometraje) {
+			try(Connection con = DriverManager.getConnection(url,usuario,password)){
+				String sql = "update parqueMovil "
+						+ "set kilometraje = ? "
+						+ "where matricula = ?";
+				PreparedStatement sentenciaPreparada = con.prepareStatement(sql);
+				sentenciaPreparada.setInt(1, kilometraje);
+				sentenciaPreparada.setString(2,matricula);
+				sentenciaPreparada.executeUpdate();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+	}
 }

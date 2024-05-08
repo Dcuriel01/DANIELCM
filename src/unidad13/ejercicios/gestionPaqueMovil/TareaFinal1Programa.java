@@ -72,17 +72,13 @@ public class TareaFinal1Programa {
 			parqueM.mostrarListadoVehiculos();
 			break;
 		case 6:
-			BaseDatos.renovarLista(parqueM.getListaVehiculos());
-			System.out.println("Base de datos actualizada");
-			break;
-		case 7:
 			System.out.println("Saliendo");
 			break;
 		default:
 			System.out.println("instrucción no reconocida");
 			break;
 		}
-		} while (opcion!=7);
+		} while (opcion!=6);
 		
 	}
 
@@ -138,8 +134,7 @@ public class TareaFinal1Programa {
 		System.out.println("3. Actualizar kilometraje vehiculo");
 		System.out.println("4. Mostrar datos de un vehiculo");
 		System.out.println("5. Mostrar listado de vehiculos");
-		System.out.println("6. Actualizar base de datos");
-		System.out.println("7. salir");
+		System.out.println("6. salir");
 		opcion = sc.nextInt();
 		return opcion;
 	}

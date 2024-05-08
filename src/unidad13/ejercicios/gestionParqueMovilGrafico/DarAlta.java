@@ -62,7 +62,6 @@ public class DarAlta extends JFrame {
         
         if (v!=null) {
 			Gestion.darAlta(v);
-			Gestion.actualizarBD();
 			JOptionPane.showMessageDialog(this, "Coche dado de alta");
 			dispose();
 		}

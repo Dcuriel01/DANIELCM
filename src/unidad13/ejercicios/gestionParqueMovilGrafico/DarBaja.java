@@ -40,7 +40,6 @@ public class DarBaja extends JFrame {
     	String matriculaS = matricula.getText();
         	if (Gestion.validadarMatricula(matriculaS)) {
         		Gestion.darBaja(matriculaS);
-    			Gestion.actualizarBD();
     			dispose();
 			}else {
 				JOptionPane.showMessageDialog(this, "Matricula mal escrita");

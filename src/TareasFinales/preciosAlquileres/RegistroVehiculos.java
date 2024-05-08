@@ -1,4 +1,4 @@
-package unidad13.gestionVehiculos;
+package TareasFinales.preciosAlquileres;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 import javax.print.attribute.SetOfIntegerSyntax;
 
-import unidad13.ejercicios.gestionPaqueMovil.Vehiculo;
+import TareasFinales.gestionParqueMovil.consola.Vehiculo;
 
 public class RegistroVehiculos {
 

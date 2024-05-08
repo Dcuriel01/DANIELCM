@@ -1,4 +1,4 @@
-package unidad13.ejercicios.gestionParqueMovilGrafico;
+package TareasFinales.gestionParqueMovil.grafico;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
@@ -8,16 +8,20 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-public class BuscarInformacion extends JFrame {
+public class CambiarKm extends JFrame {
 	
 	 private JTextField matricula;
-
-    public BuscarInformacion() {
-        super("Información de un coche");
+	 private JTextField kilometraje;
+	 
+    public CambiarKm() {
+        super("Parque Movil");
         setLayout(new FlowLayout());
         add(new JLabel("Matricula:"));
         matricula =new JTextField(10); 
         add(matricula);
+        add(new JLabel("Kilometraje:"));
+        kilometraje =new JTextField(10); 
+        add(kilometraje);
         
         Button bAceptar =  new Button("Aceptar"); 
         add(bAceptar);
@@ -31,16 +35,17 @@ public class BuscarInformacion extends JFrame {
     }
 
     public static void main(String[] args) {
-        new BuscarInformacion();
+        new CambiarKm();
     }
     
     
     private void leerDatosFormulario() {
     	
     	String matriculaS = matricula.getText();
+    	int kilometrajeS = Integer.parseInt(kilometraje.getText());
         	if (Gestion.validadarMatricula(matriculaS)) {
-        		Gestion.buscarCoche(matriculaS);
-    			Gestion.actualizarBD();
+        		Gestion.cambiarKm(matriculaS, kilometrajeS);
+    			JOptionPane.showMessageDialog(this, "Kilometraje cambiado correctamente");
     			dispose();
 			}else {
 				JOptionPane.showMessageDialog(this, "Matricula mal escrita");

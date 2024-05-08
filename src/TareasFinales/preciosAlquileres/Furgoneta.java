@@ -1,4 +1,4 @@
-package unidad13.gestionVehiculos;
+package TareasFinales.preciosAlquileres;
 
 public class Furgoneta extends VehiculoCarga{
 

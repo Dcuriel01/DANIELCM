@@ -1,6 +1,4 @@
-package unidad13.ejercicios.gestionParqueMovilGrafico;
-
-
+package TareasFinales.gestionParqueMovil.consola;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

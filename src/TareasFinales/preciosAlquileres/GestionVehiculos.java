@@ -1,4 +1,4 @@
-package unidad13.gestionVehiculos;
+package TareasFinales.preciosAlquileres;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

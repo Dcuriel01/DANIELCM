@@ -1,4 +1,4 @@
-package unidad13.ejercicios.gestionParqueMovilGrafico;
+package TareasFinales.gestionParqueMovil.grafico;
 
 import java.awt.BorderLayout;
 

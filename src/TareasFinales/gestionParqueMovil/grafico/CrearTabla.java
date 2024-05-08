@@ -26,6 +26,7 @@ public class CrearTabla {
 			datos[i][2]=vehiculo.getMarca();
 			datos[i][3]=vehiculo.getModelo();
 			datos[i][4]=String.valueOf(vehiculo.getKilometraje());
+			i++;
 		}
 		return datos;
 		

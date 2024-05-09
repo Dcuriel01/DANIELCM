@@ -1,4 +1,4 @@
-package TareasFinales.preciosAlquileres;
+package tareasFinales.preciosAlquileres;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

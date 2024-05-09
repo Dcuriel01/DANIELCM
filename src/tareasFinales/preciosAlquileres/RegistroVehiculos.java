@@ -1,12 +1,7 @@
-package TareasFinales.preciosAlquileres;
+package tareasFinales.preciosAlquileres;
 
 import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import javax.print.attribute.SetOfIntegerSyntax;
-
-import TareasFinales.gestionParqueMovil.consola.Vehiculo;
 
 public class RegistroVehiculos {
 
@@ -27,6 +22,7 @@ public class RegistroVehiculos {
 			}
 		}
 		if (encontrado) {
+			System.out.println("Error");
 		}else {
 			listaEmpresa.add(vehiculo);
 			registrado = true;

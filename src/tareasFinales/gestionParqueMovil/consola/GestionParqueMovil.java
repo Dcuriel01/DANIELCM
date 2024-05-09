@@ -1,4 +1,4 @@
-package TareasFinales.gestionParqueMovil.consola;
+package tareasFinales.gestionParqueMovil.consola;
 
 import java.util.ArrayList;
 

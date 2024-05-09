@@ -1,4 +1,4 @@
-package TareasFinales.preciosAlquileres;
+package tareasFinales.preciosAlquileres;
 
 public class Coche extends VehiculoPasajeros {
 

@@ -1,4 +1,4 @@
-package TareasFinales.gestionParqueMovil.grafico;
+package tareasFinales.gestionParqueMovil.grafico;
 
 import java.awt.Button;
 import java.awt.FlowLayout;

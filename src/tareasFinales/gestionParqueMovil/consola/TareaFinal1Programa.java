@@ -1,4 +1,4 @@
-package TareasFinales.gestionParqueMovil.consola;
+package tareasFinales.gestionParqueMovil.consola;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

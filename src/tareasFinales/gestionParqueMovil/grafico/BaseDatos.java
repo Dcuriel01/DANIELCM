@@ -1,4 +1,6 @@
-package TareasFinales.gestionParqueMovil.consola;
+package tareasFinales.gestionParqueMovil.grafico;
+
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package TareasFinales.gestionParqueMovil.grafico;
+package tareasFinales.gestionParqueMovil.grafico;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
@@ -8,17 +8,29 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-public class CambiarKm extends JFrame {
+public class DarAlta extends JFrame {
 	
 	 private JTextField matricula;
+	 private JTextField marca;
+	 private JTextField modelo;
+	 private JTextField fecha;
 	 private JTextField kilometraje;
-	 
-    public CambiarKm() {
-        super("Parque Movil");
+	
+    public DarAlta() {
+        super("Dar de alta");
         setLayout(new FlowLayout());
         add(new JLabel("Matricula:"));
         matricula =new JTextField(10); 
         add(matricula);
+        add(new JLabel("Marca:"));
+        marca =new JTextField(20); 
+        add(marca);
+        add(new JLabel("Modelo:"));
+        modelo =new JTextField(10); 
+        add(modelo);
+        add(new JLabel("Fecha(dd/MM/yy):"));
+        fecha =new JTextField(10); 
+        add(fecha);
         add(new JLabel("Kilometraje:"));
         kilometraje =new JTextField(10); 
         add(kilometraje);
@@ -35,22 +47,24 @@ public class CambiarKm extends JFrame {
     }
 
     public static void main(String[] args) {
-        new CambiarKm();
+        new DarAlta();
     }
     
     
     private void leerDatosFormulario() {
     	
     	String matriculaS = matricula.getText();
-    	int kilometrajeS = Integer.parseInt(kilometraje.getText());
-        	if (Gestion.validadarMatricula(matriculaS)) {
-        		Gestion.cambiarKm(matriculaS, kilometrajeS);
-    			JOptionPane.showMessageDialog(this, "Kilometraje cambiado correctamente");
-    			dispose();
-			}else {
-				JOptionPane.showMessageDialog(this, "Matricula mal escrita");
-			}
-			
+        String marcaS = marca.getText();
+        String modeloS = modelo.getText();
+        String fechaTemp = fecha.getText();
+        int kilometrajeS =Integer.parseInt(kilometraje.getText());
+        Vehiculo v = Gestion.crearVehiculo(matriculaS, fechaTemp, marcaS, modeloS, kilometrajeS);
+        
+        if (v!=null) {
+			Gestion.darAlta(v);
+			JOptionPane.showMessageDialog(this, "Coche dado de alta");
+			dispose();
+		}
         
         
         

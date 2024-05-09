@@ -1,4 +1,4 @@
-package TareasFinales.gestionParqueMovil.grafico;
+package tareasFinales.gestionParqueMovil.consola;
 
 import java.time.LocalDate;
 
@@ -52,11 +52,8 @@ public class Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Vehiculo: matricula: " + matricula + "\n"
-				+ "fecha  de matriculacion: " + fechaMatriculacion + "\n"
-				+ "marca: " + marca + "\n"
-				+ "modelo: " + modelo + "\n"
-				+ "kilometraje: " + kilometraje;
+		return "Vehiculo: matricula:" + matricula + ", fecha  de matriculacion:" + fechaMatriculacion + ", marca:" + marca
+				+ ", modelo :" + modelo + " y kilometraje :" + kilometraje;
 	}
 	
 	

@@ -1,0 +1,36 @@
+Futbolista: 1
+Nombre completo: Adrian Serrano
+Equipo favorito : Villareal
+Mayor de edad: true
+Jugador favorito: A.Iniesta
+Genero: Masculino
+Pierna buena: Diestro
+Posicióm: Portero
+
+Futbolista: 2
+Nombre completo: Sergio Orgaz
+Equipo favorito : Leganes
+Mayor de edad: true
+Jugador favorito: Cristiano Ronaldo
+Genero: Masculino
+Pierna buena: Diestro
+Posicióm: Delantero
+
+Futbolista: 3
+Nombre completo: Alberto Felipe
+Equipo favorito : Barcelona
+Mayor de edad: false
+Jugador favorito: Mohi
+Genero: No binario
+Pierna buena: Ambidiestro
+Posicióm: Pivote
+
+Futbolista: 4
+Nombre completo: Mohi Essbai
+Equipo favorito : Betis
+Mayor de edad: true
+Jugador favorito: Cristiano Ronaldo
+Genero: Masculino
+Pierna buena: Diestro
+Posicióm: Central
+

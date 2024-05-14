@@ -1,0 +1,2 @@
+Matricula       Tiempo(min)       Precio
+6758LKJ          2.0                     0.004

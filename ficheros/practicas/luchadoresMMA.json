@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "Charles",
+        "apellido": "Oliveira",
+        "nacionalidad": "Brasileña",
+        "posicion_ranking": 1
+    },
+    {
+        "nombre": "Dustin",
+        "apellido": "Poirier",
+        "nacionalidad": "Estadounidense",
+        "posicion_ranking": 2
+    },
+    {
+        "nombre": "Justin",
+        "apellido": "Gaethje",
+        "nacionalidad": "Estadounidense",
+        "posicion_ranking": 3
+    },
+    {
+        "nombre": "Islam",
+        "apellido": "Makhachev",
+        "nacionalidad": "Rusa",
+        "posicion_ranking": 4
+    },
+    {
+        "nombre": "Michael",
+        "apellido": "Chandler",
+        "nacionalidad": "Estadounidense",
+        "posicion_ranking": 5
+    },
+    {
+        "nombre": "Beneil",
+        "apellido": "Dariush",
+        "nacionalidad": "Iraní",
+        "posicion_ranking": 6
+    },
+    {
+        "nombre": "Tony",
+        "apellido": "Ferguson",
+        "nacionalidad": "Estadounidense",
+        "posicion_ranking": 7
+    },
+    {
+        "nombre": "Rafael",
+        "apellido": "dos Anjos",
+        "nacionalidad": "Brasileña",
+        "posicion_ranking": 8
+    },
+    {
+        "nombre": "Dan",
+        "apellido": "Hooker",
+        "nacionalidad": "Neozelandesa",
+        "posicion_ranking": 9
+    },
+    {
+        "nombre": "Conor",
+        "apellido": "McGregor",
+        "nacionalidad": "Irlandesa",
+        "posicion_ranking": 10
+    }
+]

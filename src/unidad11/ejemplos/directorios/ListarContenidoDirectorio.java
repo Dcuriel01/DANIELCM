@@ -6,7 +6,7 @@ public class ListarContenidoDirectorio {
 
 	public static void main(String[] args) {
 
-		File directorio = new File("/home/diurno/Documentos/Ficheros");
+		File directorio = new File("ficheros/");
 		if (directorio.exists()) {
 			if (directorio.isDirectory()) {
 				/*Listar contenido usando list();

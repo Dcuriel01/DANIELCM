@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Kevin",
+    "apellido": "De Bruyne",
+    "liga": "Premier League",
+    "equipo": "Manchester City",
+    "dorsal": 17,
+    "posicion": "Centrocampista"
+  },
+  {
+    "nombre": "Raheem",
+    "apellido": "Sterling",
+    "liga": "Premier League",
+    "equipo": "Manchester City",
+    "dorsal": 7,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Ruben",
+    "apellido": "Dias",
+    "liga": "Premier League",
+    "equipo": "Manchester City",
+    "dorsal": 3,
+    "posicion": "Defensa"
+  },
+  {
+    "nombre": "Phil",
+    "apellido": "Foden",
+    "liga": "Premier League",
+    "equipo": "Manchester City",
+    "dorsal": 47,
+    "posicion": "Centrocampista"
+  },
+  {
+    "nombre": "Riyad",
+    "apellido": "Mahrez",
+    "liga": "Premier League",
+    "equipo": "Manchester City",
+    "dorsal": 26,
+    "posicion": "Delantero"
+  }
+]

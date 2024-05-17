@@ -82,10 +82,14 @@ public class VentanaPrincipal extends JFrame {
 			OrdenarMundial ordenarMundial = new OrdenarMundial();
 			Collections.sort(pilotos,ordenarMundial);
 			StringBuilder mensaje = new StringBuilder();
+			boolean alonso = false;
 			String parrafo="";
 			int j=1;
 			for (Piloto piloto : pilotos) {
 				if (j==1) {
+					if (piloto.getNombre().equals("Fernando")) {
+						alonso=true;
+					}
 					parrafo = "Campeon: " + piloto.getNombre()+" PTS: " + piloto.getPts();
 					mensaje.append(parrafo+"\n");
 				}else if (j==2) {
@@ -99,6 +103,7 @@ public class VentanaPrincipal extends JFrame {
 				j++;
 			}
 			JOptionPane.showMessageDialog(this, "Campeonato:\n"+mensaje);
+			JOptionPane.showMessageDialog(this, "Alonso you are the number one of world");
 			bGenerar.disable();
 			bGenerarMun.disable();
 		}

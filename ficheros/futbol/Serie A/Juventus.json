@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Cristiano",
+    "apellido": "Ronaldo",
+    "liga": "Serie A",
+    "equipo": "Juventus",
+    "dorsal": 7,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Giorgio",
+    "apellido": "Chiellini",
+    "liga": "Serie A",
+    "equipo": "Juventus",
+    "dorsal": 3,
+    "posicion": "Defensa"
+  },
+  {
+    "nombre": "Paulo",
+    "apellido": "Dybala",
+    "liga": "Serie A",
+    "equipo": "Juventus",
+    "dorsal": 10,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Federico",
+    "apellido": "Chiesa",
+    "liga": "Serie A",
+    "equipo": "Juventus",
+    "dorsal": 22,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Wojciech",
+    "apellido": "Szczęsny",
+    "liga": "Serie A",
+    "equipo": "Juventus",
+    "dorsal": 1,
+    "posicion": "Portero"
+  }
+]

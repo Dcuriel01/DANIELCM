@@ -9,8 +9,8 @@ public class TablaPilotos {
 	static ArrayList<Piloto> listaPilotos = null;
 	
 	public static void crearTabla() {
-		String [] cabecera = new String[]{"Nombre","Apellido","Abreviatura","Equipo","Pais Nacimiento","Puntos"};
-		String[][] pilotos = new String[20][6];
+		String [] cabecera = new String[]{"Posición","Nombre","Apellido","Abreviatura","Equipo","Pais Nacimiento","Puntos"};
+		String[][] pilotos = new String[20][cabecera.length];
 		pilotos=añadirPilotos(pilotos);
 		new Tabla(pilotos,cabecera,"clasificacion").setVisible(true);
 		
@@ -25,12 +25,13 @@ public class TablaPilotos {
 		OrdenarMundial ordenarMundial = new OrdenarMundial();
 		Collections.sort(listaPilotos,ordenarMundial);
 		for (Piloto piloto : listaPilotos) {
-			pilotos[i][0] = piloto.getNombre();
-			pilotos[i][1] = piloto.getApellidos();
-			pilotos[i][2] = piloto.getAbreviatura();
-			pilotos[i][3] = piloto.getEquipo();
-			pilotos[i][4] = piloto.getPais_nacimiento();
-			pilotos[i][5] = String.valueOf(piloto.getPts());
+			pilotos[i][0] =	String.valueOf(i+1);
+			pilotos[i][1] = piloto.getNombre();
+			pilotos[i][2] = piloto.getApellidos();
+			pilotos[i][3] = piloto.getAbreviatura();
+			pilotos[i][4] = piloto.getEquipo();
+			pilotos[i][5] = piloto.getPais_nacimiento();
+			pilotos[i][6] = String.valueOf(piloto.getPts());
 			i++;
 		}
 		return pilotos;

@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Karim",
+    "apellido": "Benzema",
+    "liga": "Liga Española",
+    "equipo": "Real Madrid",
+    "dorsal": 9,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Sergio",
+    "apellido": "Ramos",
+    "liga": "Liga Española",
+    "equipo": "Real Madrid",
+    "dorsal": 4,
+    "posicion": "Defensa"
+  },
+  {
+    "nombre": "Toni",
+    "apellido": "Kroos",
+    "liga": "Liga Española",
+    "equipo": "Real Madrid",
+    "dorsal": 8,
+    "posicion": "Centrocampista"
+  },
+  {
+    "nombre": "Eden",
+    "apellido": "Hazard",
+    "liga": "Liga Española",
+    "equipo": "Real Madrid",
+    "dorsal": 7,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Luka",
+    "apellido": "Modrić",
+    "liga": "Liga Española",
+    "equipo": "Real Madrid",
+    "dorsal": 10,
+    "posicion": "Centrocampista"
+  }
+]

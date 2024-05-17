@@ -1,0 +1,30 @@
+Lionel,Messi,Liga Española,Barcelona,10,Delantero
+Gerard,Piqué,Liga Española,Barcelona,3,Defensa
+Jordi,Alba,Liga Española,Barcelona,18,Defensa
+Frenkie,de Jong,Liga Española,Barcelona,21,Centrocampista
+Marc-André,ter Stegen,Liga Española,Barcelona,1,Portero
+Karim,Benzema,Liga Española,Real Madrid,9,Delantero
+Sergio,Ramos,Liga Española,Real Madrid,4,Defensa
+Toni,Kroos,Liga Española,Real Madrid,8,Centrocampista
+Eden,Hazard,Liga Española,Real Madrid,7,Delantero
+Luka,Modrić,Liga Española,Real Madrid,10,Centrocampista
+Pierre-Emerick,Aubameyang,Premier League,Arsenal,14,Delantero
+Bukayo,Saka,Premier League,Arsenal,7,Delantero
+Kieran,Tierney,Premier League,Arsenal,3,Defensa
+Thomas,Partey,Premier League,Arsenal,18,Centrocampista
+Bernd,Leno,Premier League,Arsenal,1,Portero
+Kevin,De Bruyne,Premier League,Manchester City,17,Centrocampista
+Raheem,Sterling,Premier League,Manchester City,7,Delantero
+Ruben,Dias,Premier League,Manchester City,3,Defensa
+Phil,Foden,Premier League,Manchester City,47,Centrocampista
+Riyad,Mahrez,Premier League,Manchester City,26,Delantero
+Cristiano,Ronaldo,Serie A,Juventus,7,Delantero
+Giorgio,Chiellini,Serie A,Juventus,3,Defensa
+Paulo,Dybala,Serie A,Juventus,10,Delantero
+Federico,Chiesa,Serie A,Juventus,22,Delantero
+Wojciech,Szczęsny,Serie A,Juventus,1,Portero
+Lorenzo,Pellegrini,Serie A,Roma,7,Centrocampista
+Chris,Smalling,Serie A,Roma,6,Defensa
+Tammy,Abraham,Serie A,Roma,9,Delantero
+Jordan,Veretout,Serie A,Roma,4,Centrocampista
+Rui,Patrício,Serie A,Roma,13,Portero

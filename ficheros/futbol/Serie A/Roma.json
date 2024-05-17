@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Lorenzo",
+    "apellido": "Pellegrini",
+    "liga": "Serie A",
+    "equipo": "Roma",
+    "dorsal": 7,
+    "posicion": "Centrocampista"
+  },
+  {
+    "nombre": "Chris",
+    "apellido": "Smalling",
+    "liga": "Serie A",
+    "equipo": "Roma",
+    "dorsal": 6,
+    "posicion": "Defensa"
+  },
+  {
+    "nombre": "Tammy",
+    "apellido": "Abraham",
+    "liga": "Serie A",
+    "equipo": "Roma",
+    "dorsal": 9,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Jordan",
+    "apellido": "Veretout",
+    "liga": "Serie A",
+    "equipo": "Roma",
+    "dorsal": 4,
+    "posicion": "Centrocampista"
+  },
+  {
+    "nombre": "Rui",
+    "apellido": "Patrício",
+    "liga": "Serie A",
+    "equipo": "Roma",
+    "dorsal": 13,
+    "posicion": "Portero"
+  }
+]

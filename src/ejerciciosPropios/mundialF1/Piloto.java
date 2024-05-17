@@ -71,10 +71,15 @@ public class Piloto {
 		this.ptsEnCarrera = ptsEnCarrera;
 	}
 	public void setnGeneradores() {
-		if (equipo.equals("Red Bull Racing")|nombre.equals("Fernando")) {
+		/*if (equipo.equals("Red Bull Racing")|nombre.equals("Fernando")) {
 			nGeneradores=3;
 		}else if (equipo.equals("Mercedes")|equipo.equals("Ferrari")|equipo.equals("McLaren")) {
 			nGeneradores=2;
+		}else {
+			nGeneradores = 1;
+		}*/
+		if (nombre.equals("Fernando")) {
+			nGeneradores=3;
 		}else {
 			nGeneradores = 1;
 		}

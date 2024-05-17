@@ -1,3 +1,6 @@
-Luchador:Islam Makhachev 
-Nacionalidad: Rusa
-Posición en el ranking: 4
+Luchador:Charles Oliveira 
+Nacionalidad: Brasileña
+Posición en el ranking: 1
+Luchador:Rafael dos Anjos 
+Nacionalidad: Brasileña
+Posición en el ranking: 8

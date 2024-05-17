@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Pierre-Emerick",
+    "apellido": "Aubameyang",
+    "liga": "Premier League",
+    "equipo": "Arsenal",
+    "dorsal": 14,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Bukayo",
+    "apellido": "Saka",
+    "liga": "Premier League",
+    "equipo": "Arsenal",
+    "dorsal": 7,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Kieran",
+    "apellido": "Tierney",
+    "liga": "Premier League",
+    "equipo": "Arsenal",
+    "dorsal": 3,
+    "posicion": "Defensa"
+  },
+  {
+    "nombre": "Thomas",
+    "apellido": "Partey",
+    "liga": "Premier League",
+    "equipo": "Arsenal",
+    "dorsal": 18,
+    "posicion": "Centrocampista"
+  },
+  {
+    "nombre": "Bernd",
+    "apellido": "Leno",
+    "liga": "Premier League",
+    "equipo": "Arsenal",
+    "dorsal": 1,
+    "posicion": "Portero"
+  }
+]

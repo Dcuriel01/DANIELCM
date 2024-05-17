@@ -20,7 +20,7 @@ public class FicherosFutbolista {
 				escritor.println("Jugador favorito: " + futbolista.getJugadorFav());
 				escritor.println("Genero: " + futbolista.getGenero());
 				escritor.println("Pierna buena: " + futbolista.getPierna());
-				escritor.println("Posicióm: " + futbolista.getPosicion());
+				escritor.println("Posición: " + futbolista.getPosicion());
 				escritor.println();
 			}
 			

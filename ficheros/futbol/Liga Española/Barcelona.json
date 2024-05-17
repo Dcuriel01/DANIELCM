@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Lionel",
+    "apellido": "Messi",
+    "liga": "Liga Española",
+    "equipo": "Barcelona",
+    "dorsal": 10,
+    "posicion": "Delantero"
+  },
+  {
+    "nombre": "Gerard",
+    "apellido": "Piqué",
+    "liga": "Liga Española",
+    "equipo": "Barcelona",
+    "dorsal": 3,
+    "posicion": "Defensa"
+  },
+  {
+    "nombre": "Jordi",
+    "apellido": "Alba",
+    "liga": "Liga Española",
+    "equipo": "Barcelona",
+    "dorsal": 18,
+    "posicion": "Defensa"
+  },
+  {
+    "nombre": "Frenkie",
+    "apellido": "de Jong",
+    "liga": "Liga Española",
+    "equipo": "Barcelona",
+    "dorsal": 21,
+    "posicion": "Centrocampista"
+  },
+  {
+    "nombre": "Marc-André",
+    "apellido": "ter Stegen",
+    "liga": "Liga Española",
+    "equipo": "Barcelona",
+    "dorsal": 1,
+    "posicion": "Portero"
+  }
+]

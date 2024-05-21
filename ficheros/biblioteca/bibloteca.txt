@@ -1,0 +1,20 @@
+Cien Años de Soledad, Gabriel García Márquez, 1967, 19.99
+Don Quijote de la Mancha, Miguel de Cervantes, 1605, 15.99
+1984, George Orwell, 1949, 14.99
+El Principito, Antoine de Saint-Exupéry, 1943, 10.99
+Matar a un Ruiseñor, Harper Lee, 1960, 12.99
+Orgullo y Prejuicio, Jane Austen, 1813, 11.99
+Crimen y Castigo, Fiódor Dostoyevski, 1866, 13.99
+La Odisea, Homero, -800, 9.99
+Los Miserables, Victor Hugo, 1862, 16.99
+La Divina Comedia, Dante Alighieri, 1320, 14.99
+El Gran Gatsby, F. Scott Fitzgerald, 1925, 10.99
+En Busca del Tiempo Perdido, Marcel Proust, 1913, 18.99
+Cumbres Borrascosas, "Emily Brontë", 1847, 12.99
+Alicia en el País de las Maravillas", Lewis Carroll, 1865, 8.99
+Fahrenheit 451, Ray Bradbury, 1953, 10.99
+La Metamorfosis, Franz Kafka, 1915, 9.99
+El Señor de los Anillos, J.R.R. Tolkien, 1954, 22.99
+Drácula, Bram Stoker, 1897, 12.99
+El Hobbit, J.R.R. Tolkien, 1937, 14.99
+Anna Karenina, León Tolstói, 1877, 17.99

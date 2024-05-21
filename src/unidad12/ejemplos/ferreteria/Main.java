@@ -5,21 +5,25 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.xml.transform.sax.SAXSource;
 
+import ejerciciosPropios.mundialF1.OrdenarMundial;
+import ejerciciosPropios.mundialF1.Piloto;
 import unidad12.ConexionBD;
+import unidad13.ejemplos.menu.Tabla;
 
 public class Main {
-	static String url = ConexionBD.obtenerURLClase();
+	static String url = ConexionBD.obtenerURLCasa();
 	static String usuario = ConexionBD.obtenerUsuario();
 	static String password = ConexionBD.obtenerContraseña();
 	public static void main(String[] args) {
-		/*
+		
 		List<String> listaProductos = new ArrayList<String>();
 		
-		try {
+		/*try {
 			listaProductos = Files.readAllLines(
 								Paths.get("ficheros//ferreteria//productos.csv")
 									,StandardCharsets.UTF_8);
@@ -37,8 +41,8 @@ public class Main {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		*/
+		}*/
+		
 		tratarProductos();
 		
 	}
@@ -54,7 +58,7 @@ public class Main {
 		pD.eliminarProducto(productoEliminar);
 		Producto productoActualizar = new Producto("U5N74F0E","Motosierra","Herramienta para cortar madera",138.0);
 		pD.actualizarProducto(productoActualizar);
-		pD.obtenerProducto("MZOC8LXP");
+		System.out.println(pD.obtenerProducto("MZOC8LXP"));
 	}
 
 	private static void insertarProducto(Producto producto) {
@@ -69,4 +73,25 @@ public class Main {
 		}
 	}
 
+	public static void crearTabla() {
+		ProductoDAO pD = new ProductoDAO(url, usuario, password);
+		List<Producto> productos = pD.listarTodosLosProductos();
+		String [] cabecera = new String[]{"Código","Nombre","Descripcion","Precio"};
+		String[][] productosArray = new String[productos.size()][cabecera.length];
+		productosArray=añadirProductos(productos,productosArray);
+		new Tabla(productosArray,cabecera,"Ferreteria").setVisible(true);
+	}
+
+	
+	public static String[][] añadirProductos(List<Producto> productos, String[][] productosArray) {
+		int i=0;
+		for (Producto producto : productos) {
+			productosArray[i][0] = producto.getCodigo();
+			productosArray[i][1] = producto.getNombre();
+			productosArray[i][2] = producto.getDescripcion();
+			productosArray[i][3] = String.valueOf(producto.getPrecio());
+			i++;
+		}
+		return productosArray;
+	}
 }

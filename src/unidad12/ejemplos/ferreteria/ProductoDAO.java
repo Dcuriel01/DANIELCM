@@ -131,12 +131,14 @@ public class ProductoDAO {
 		String sql = "SELECT * FROM productos WHERE codigo = ?";
 		Producto producto = null;
 		conectar();
-		
 		try {
 			PreparedStatement sentenciaPreparada = con.prepareStatement(sql);
+			sentenciaPreparada.setString(1, codigo);
 			ResultSet resultado = sentenciaPreparada.executeQuery();
-			producto = new Producto(resultado.getString("codigo"), resultado.getString("nombre")
-					, resultado.getString("descripcion"),resultado.getDouble("precio"));
+			while (resultado.next()) {
+				 producto = new Producto(resultado.getString("codigo"), resultado.getString("nombre")
+						, resultado.getString("descripcion"),resultado.getDouble("precio"));
+			}
 			sentenciaPreparada.close();
 			desconectar();
 		} catch (SQLException e) {

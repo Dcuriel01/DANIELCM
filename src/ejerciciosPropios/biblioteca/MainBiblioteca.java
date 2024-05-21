@@ -10,7 +10,7 @@ import java.util.List;
 import unidad12.ConexionBD;
 
 public class MainBiblioteca {
-	static String url = ConexionBD.obtenerURLCasa();
+	static String url = ConexionBD.obtenerURLClase();
 	static String usuario = ConexionBD.obtenerUsuario();
 	static String password = ConexionBD.obtenerContraseña();
 	static List<String> listaLibros = new ArrayList<String>();

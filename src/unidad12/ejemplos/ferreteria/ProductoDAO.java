@@ -127,6 +127,8 @@ public class ProductoDAO {
 		return Modificacion ;
 	}
 	
+	
+	
 	public Producto obtenerProducto(String codigo) {
 		String sql = "SELECT * FROM productos WHERE codigo = ?";
 		Producto producto = null;

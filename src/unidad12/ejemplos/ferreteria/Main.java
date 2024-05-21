@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import javax.swing.JOptionPane;
 import javax.xml.transform.sax.SAXSource;
 
 import ejerciciosPropios.mundialF1.OrdenarMundial;
@@ -16,7 +17,7 @@ import unidad12.ConexionBD;
 import unidad13.ejemplos.menu.Tabla;
 
 public class Main {
-	static String url = ConexionBD.obtenerURLCasa();
+	static String url = ConexionBD.obtenerURLClase();
 	static String usuario = ConexionBD.obtenerUsuario();
 	static String password = ConexionBD.obtenerContraseña();
 	public static void main(String[] args) {
@@ -93,5 +94,71 @@ public class Main {
 			i++;
 		}
 		return productosArray;
+	}
+
+	public static void eliminarProducto(String codigo) {
+		ProductoDAO pD = new ProductoDAO(url, usuario, password);
+		 Producto p  = comprobarExistencia(codigo);
+		if (p.getCodigo().equals("0")) {
+			JOptionPane.showMessageDialog(null, "Producto no encontrado");
+		}else {
+			pD.eliminarProducto(p);
+			JOptionPane.showMessageDialog(null,"Producto eliminado");
+		}
+		
+	}
+
+	private static Producto comprobarExistencia(String codigo) {
+		ProductoDAO pD = new ProductoDAO(url, usuario, password);
+		List<Producto> productos = pD.listarTodosLosProductos();
+		boolean encontrado=false;
+		Producto p = null;
+		for (Producto producto : productos) {
+			if (codigo.equals(producto.getCodigo())) {
+				p=producto;
+				encontrado=true;
+				break;
+			}
+		}
+		if (!encontrado) {
+			p= new Producto("0", "0", "0", 0);
+		}
+		return p;
+	}
+
+	public static void actualizarProducto(Producto producto) {
+		ProductoDAO pD = new ProductoDAO(url, usuario, password);
+		Producto p  = comprobarExistencia(producto.getCodigo());
+		if (p.getCodigo().equals("0")) {
+			JOptionPane.showMessageDialog(null, "Producto no encontrado");
+		}else {
+			pD.actualizarProducto(producto);
+			JOptionPane.showMessageDialog(null,"Producto actualizado");
+		}
+		
+	}
+
+	public static Producto buscarProducto(String codigo) {
+		ProductoDAO pD = new ProductoDAO(url, usuario, password);
+		Producto p  = comprobarExistencia(codigo);
+		if (p.getCodigo().equals("0")) {
+			JOptionPane.showMessageDialog(null, "Producto no encontrado");
+		}else {
+			p=pD.obtenerProducto(codigo);
+		}
+		return p;
+		
+	}
+
+	public static void crearProducto(Producto producto) {
+		ProductoDAO pD = new ProductoDAO(url, usuario, password);
+		Producto p  = comprobarExistencia(producto.getCodigo());
+		if (p.getCodigo().equals("0")) {
+			pD.insertarProducto(producto);
+			JOptionPane.showMessageDialog(null,"Producto creado");
+		}else {
+			JOptionPane.showMessageDialog(null, "Codigo ya existente");
+		}
+		
 	}
 }

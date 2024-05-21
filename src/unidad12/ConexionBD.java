@@ -52,7 +52,10 @@ public class ConexionBD {
 			String sql = "";
 			PreparedStatement sentenciaPreparada = con.prepareStatement(sql);
 			sentenciaPreparada.setInt();
+			//Leer datos 
 			ResultSet resultado = sentenciaPreparada.executeQuery();
+			//Insertarlos o modificarlos
+			sentenciaPreparada.executeUpdate();
 			while (resultado.next()) {
 			}
 		} catch (SQLException e) {

@@ -20,8 +20,8 @@ public class Main {
 	static ArrayList<Certificado> listaCertificados = new ArrayList<Certificado>();
 	public static void main(String[] args) {
 		leerFichero();
-		//contrastarBD();
-		//baseOJ();
+		contrastarBD();
+		baseOJ();
 		//empresasCertificadorasTabla();
 		tablaBaseRelacional();
 		tablaBaseOJ();

@@ -1,0 +1,28 @@
+ID Certificado;Propietario;Dirección;Tipo de Propiedad;Clasificación Energética;Fecha de Expedición;Empresa Certificadora;Código Técnico
+C001;Juan Pérez;Calle Mayor 10, Madrid;Residencial;A;2022-01-15;Eficiencia Verde;T001
+C002;Ana Gómez;Avenida del Sol 23, Barcelona;Residencial;A;2022-02-20;EnergeticCert;T002
+C003;Luis Martínez;Calle Luna 5, Sevilla;Comercial;A;2022-03-25;EcoEnergy;T003
+C005;Carlos Ruiz;Avenida de la Paz 10, Bilbao;Comercial;B;2022-05-10;GreenCert;T004
+C006;Elena Torres;Calle Norte 5, Granada;Residencial;C;2022-06-05;EnergeticCert;T002
+C007;Pedro Sánchez;Calle Sur 15, Zaragoza;Comercial;A;2022-07-15;EcoEnergy;T003
+C008;Laura Ramírez;Paseo del Mar 22, Málaga;Residencial;B;2022-08-20;GreenCert;T004
+C009;Miguel Ángel;Calle Flores 9, Alicante;Residencial;A;2022-09-25;Eficiencia Verde;T001
+C010;Sara Torres;Calle del Río 14, Vigo;Residencial;B;2022-10-30;EnergeticCert;T002
+C011;Jorge Hernández;Avenida Central 30, Murcia;Comercial;C;2022-11-15;EcoEnergy;T003
+C013;David González;Paseo de la Alameda 42, Madrid;Residencial;B;2023-01-10;GreenCert;T004
+C014;Laura Martínez;Avenida de la Paz 19, Sevilla;Comercial;C;2023-02-15;EnergeticCert;T002
+C015;Pablo López;Calle Nueva 22, Valencia;Comercial;A;2023-03-20;EcoEnergy;T003
+C016;Raquel Gómez;Plaza Mayor 4, Barcelona;Residencial;B;2023-04-25;Eficiencia Verde;T001
+C017;Carlos García;Calle Larga 10, Zaragoza;Comercial;C;2023-05-30;GreenCert;T004
+C018;Ana Muñoz;Avenida del Norte 10, Bilbao;Residencial;A;2023-06-15;EnergeticCert;T002
+C019;Luis Fernández;Calle del Río 15, Málaga;Residencial;B;2023-07-20;EcoEnergy;T003
+C020;Elena González;Calle del Bosque 14, Madrid;Comercial;C;2023-08-25;Eficiencia Verde;T001
+C021;Pedro Torres;Avenida del Parque 25, Sevilla;Residencial;A;2023-09-10;GreenCert;T004
+C022;María Hernández;Calle de la Sierra 11, Valencia;Residencial;B;2023-10-05;EnergeticCert;T004
+C023;Juan López;Calle del Campo 19, Barcelona;Comercial;C;2023-11-20;EcoEnergy;T003
+C025;Sergio Sánchez;Calle del Olivo 20, Zaragoza;Residencial;B;2024-01-15;GreenCert;T004
+C026;Raúl Fernández;Avenida de la Estrella 12, Bilbao;Comercial;C;2024-02-20;EnergeticCert;T002
+C027;Patricia Ruiz;Calle de la Montaña 9, Málaga;Residencial;A;2024-03-25;EcoEnergy;T003
+C028;Daniel Gómez;Calle del Sol 20, Alicante;Residencial;B;2024-04-30;Eficiencia Verde;T001
+C029;Sofía Martínez;Avenida del Cielo 12, Vigo;Comercial;C;2024-05-10;GreenCert;T004
+C030;Andrés Pérez;Calle del Mar 25, Murcia;Residencial;A;2024-06-15;EnergeticCert;T002
